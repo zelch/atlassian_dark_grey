@@ -1,0 +1,2433 @@
+/* ==UserStyle==
+ * @name         Atlassian Dark Blue/Gray
+ * @namespace    github.com/zelch
+ * @version      1.14.4
+ * @license      BSD
+ * @author       @zelch
+ * @preprocessor less
+ *
+ * ==/UserStyle== */
+@-moz-document regexp(".*.atlassian.net/jira.*"),
+regexp(".*.atlassian.net/issues.*"),
+regexp(".*.atlassian.net/browse.*"),
+regexp(".*.atlassian.net/secure.*"),
+regexp(".*.bitbucket.org/.*"),
+regexp("https://awesome-graphs.stiltsoft.net/.*"),
+regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
+
+    :root {
+        --ds-background-selected: #117;
+        --ds-surface: #335;
+        --ds-text-subtlest: #99a;
+        --ds-text-subtle: #bbb;
+        --ds-text-lowEmphasis: #ddd;
+        --ds-text: #ccc;
+        --ds-text-selected: #eee;
+        --ds-text-inverse: #fff;
+        --ds-text-brand: #0ff;
+        --ds-text-information: #aaf;
+        --ds-text-success: #6b6;
+        --ds-icon-success: #0e0;
+        --ds--code--line-number-bg-color: #668;
+        --ds--code--line-number-color: #f00;
+        --ds-text-highEmphasis: #eef;
+        --text-highEmphasis: #eef;
+        --ds-text-mediumEmphasis: #ddf;
+        --ds-surface-overlay: #446;
+        --ds-background-neutral-subtle: #446;
+        --ds-background-neutral-subtle-hovered: #44a;
+        --ds-background-neutral: #335;
+        --ds-background-neutral-hovered: #33a;
+        --ds-background-input-hovered: #000;
+        --ds-background-input: #225;
+        --ds-background-input-pressed: #339;
+        --ds-background-default: #333;
+        --ds-background-subtleNeutral-resting: #00f2;
+        --ds-background-subtleBrand-resting: #229;
+        --ds-background-success: #141;
+        --ds-background-information: #114;
+        --ds-background-warning: #440;
+        --ds-background-danger: #411;
+        --ds-background-danger-bold: #822;
+        --ds-background-subtleDanger-resting: #411;
+        --ds-background-discovery-hovered: #0b1628;
+        --ds-background-discovery: #228;
+        --ds-background-brand: #114;
+        --ds-background-inverse-subtle: #313;
+        --ds-background-selected-hovered: #229;
+        --ds-background-subtleBorderedNeutral-resting: #446;
+        --ds-background-accent-yellow-subtlest: #330;
+        --background-transparentNeutral-hover: #229;
+        --ds-background-subtleNeutral-hover: #558;
+        --ds-border-neutral: #11a;
+        --ds-border-input: #44a;
+        --ds-border: #11f;
+        --ds-UNSAFE_util-transparent: transparent;
+        --ds-link: #8ec4fd;
+        --ds-link-active: #ae74ff;
+        --ds-link-pressed: #ae74ff;
+        --ds-icon: #bbb;
+        --ds-icon-danger: #f80;
+        --ds-icon-information: #38f;
+        --ds-iconBorder-danger: #f00;
+        --ds-iconBorder-brand: #88f;
+
+        --ds-text-accent-purple: #ee00ee;
+        --ds-text-accent-green: #0d0;
+        --ds-text-accent-blue: #55f;
+        --ds-text-accent-teal: #0ee;
+    }
+
+    .screen-editor .aui-restfultable-create tr.aui-restfultable-focused:hover td,
+    .screen-editor .aui-restfultable-create tr.aui-restfultable-focused td {
+        background-color: var(--ds-background-neutral-subtle);
+    }
+
+    a[id="com.xpandit.plugins.xray__xray-document-generator-bulk"] {
+        filter: brightness(300%);
+    }
+
+    .issue-header,
+    #issue-content {
+        background-color: var(--ds-background-default);
+    }
+
+    iframe {
+        border: 5px green !important;
+    }
+
+    .filter-details-section.full-section {
+        background-color: var(--ds-background-information);
+    }
+
+    /* Bitbucket code search. */
+    .css-1p3uti6 {
+        background-color: #232e40;
+    }
+
+    .css-jha7l5 {
+        background-color: #232e40;
+        color: var(--ds-text);
+    }
+
+    .css-x33wpd {
+        background-color: #0b1628;
+    }
+
+    .css-9o1qfs em {
+        background-color: var(--ds-background-warning);
+    }
+
+    .css-cj6wzu {
+        background-color: var(--ds-background);
+    }
+
+    /* Bitbucket deployments. */
+    .css-t9mtex {
+        background-color: var(--ds-background-neutral-subtle);
+    }
+
+    .css-1mzp4m2 {
+        background-color: var(--ds-background-neutral);
+    }
+
+    .css-z3cgul {
+        background-color: var(--ds-background-neutral-subtle);
+    }
+
+    .css-1yp7toj {
+        color: var(--ds-text);
+    }
+
+    .css-1j6b79x {
+        color: var(--ds-text);
+    }
+
+    .css-1f55wkq {
+        border: 3px solid #557;
+    }
+
+    .css-j08g6c {
+        position: absolute;
+        top: 98px;
+        z-index: 1;
+        background-image: linear-gradient(to right, #fff 33%, transparent 0%);
+        background-position: center bottom;
+        background-size: 6px 2px;
+        background-repeat: repeat-x;
+        height: 2px;
+        left: -80px;
+        width: 273px;
+    }
+
+    .css-j08g6c::before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-top: 5px solid transparent;
+        border-left: 10px solid #fff;
+        right: -1px;
+        top: -4px;
+        border-bottom: 5px solid transparent;
+    }
+
+    /* End of bitbucket deployments. */
+    /* bitbucket specific */
+    body {
+        color: var(--ds-text);
+    }
+
+    body #account-admin h2,
+    body #account-admin h3,
+    body #account-admin h4 {
+        color: var(--ds-text);
+    }
+
+    .css-yurw3r {
+        color: var(--ds-text);
+    }
+
+    .css-19oq9lj {
+        color: var(--ds-link) !important;
+    }
+
+    .css-1bd85rk,
+    .css-fuwv6e {
+        color: var(--ds-text);
+    }
+
+    a.css-32z3k3 {
+        color: var(--ds-link) !important;
+    }
+
+    .css-cf5i6p,
+    .css-cf5i6p:hover,
+    .css-cf5i6p:active,
+    .css-cf5i6p:focus,
+    .css-cf5i6p:visited,
+    .css-cf5i6p:disabled,
+    .css-cf5i6p[disabled] {
+        color: var(--ds-link) !important;
+    }
+
+    .css-7yxqiz a,
+    .css-7yxqiz a:hover,
+    .css-7yxqiz a:focus {
+        color: var(--ds-link-active);
+    }
+
+    .hqyPWx:hover,
+    .hHbhyl {
+        background-color: var(--ds-background-input-hovered);
+        color: var(--ds-text);
+    }
+
+    .mtk20 {
+        color: #aaa;
+    }
+
+    .mtk26 {
+        color: #559;
+    }
+
+    .mtk1 {
+        color: #555;
+    }
+
+    .monaco-editor .margin {
+        background-color: var(--ds-background);
+    }
+
+    .monaco-editor .margin .margin-view-overlays {
+        border-right: 1px solid rgb(223, 225, 230);
+        box-sizing: border-box;
+        background: var(--ds-background) none repeat scroll 0% 0%;
+    }
+
+    .monaco-editor .margin .margin-view-overlays .line-numbers a {
+        color: var(--ds-text);
+    }
+
+    .monaco-editor .lines-content .highlighted {
+        background: #440 none repeat scroll 0% 0%;
+    }
+
+    .commit-status--success::before {
+        color: #14f92c;
+    }
+
+    .hqyPWx {
+        background-color: var(--ds-background-input);
+        color: var(--ds-text);
+        border-color: var(--ds-border-input);
+    }
+
+    .css-1q7i31j pre {
+        background-color: #111;
+    }
+
+    .app-passwords--password {
+        background-color: var(--ds-background-information);
+    }
+
+    body.adg3 .aui-dialog2 .aui-dialog2-header,
+    .aui-dialog2,
+    .aui-dialog2-content,
+    body.adg3 .aui-dialog2 .aui-dialog2-footer {
+        background-color: var(--ds-background-neutral)
+    }
+
+    #commit-header .commit-description .inline-user--name {
+        color: var(--ds-text-subtlest);
+    }
+
+    #commit-header .commit-description time {
+        color: var(--ds-text-subtlest);
+    }
+
+    .KSsKW:hover,
+    .dHVnpG[data-not-create="true"]:hover {
+        background-color: var(--ds-background-neutral-hovered);
+    }
+
+    .css-134uz78:hover,
+    .css-134uz78:focus {
+        background-color: var(--ds-background-neutral-hovered);
+        box-shadow: var(--ds-background-neutral-hovered) -4px 0px 0px 0px, var(--ds-background-neutral-hovered) 4px 0px 0px 0px;
+    }
+
+    .css-1ls1i4j {
+        color: var(--ds-link);
+    }
+
+    .field-group button {
+        color: var(--ds-link) !important;
+    }
+
+    body.adg3 .aui-button.aui-button-link,
+    body.adg3 .aui-button.aui-button-link:visited,
+    body.adg3 .aui-button.aui-button-text,
+    body.adg3 .aui-button.aui-button-text:visited {
+        color: var(--ds-link);
+    }
+
+    a:active {
+        color: var(--ds-link-active);
+    }
+
+    a:hover *,
+    button:hover * {
+        text-decoration: underline;
+    }
+
+    .css-3nrhgd:hover {
+        color: #aaf !important;
+    }
+
+    div[data-qa="create-pull-request-button"] > a {
+        color: var(--ds-link) !important;
+    }
+
+    div[data-qa^="select-"] div[class$="-singleValue"],
+    div[data-qa^="select-"] div[class$="-placeholder"] {
+        color: var(--ds-link);
+    }
+
+    div[data-qa^="select-"] > div[class$="-container"] > div[class$="-control"]:nth-child(2),
+    div[data-qa^="select-"] div[class$="-control"]:hover,
+    div[data-qa^="select-"] div[class$="-menu"] {
+        background-color: var(--ds-background-neutral-subtle);
+        border-color: var(--ds-background-neutral-subtle-hovered);
+    }
+
+    a[data-testid="create-repository-button"] {
+        color: var(--ds-link) !important;
+    }
+
+    .css-1pialsq {
+        background-color: var(--ds-background-input-hovered);
+    }
+
+    .css-1e2ir0d {
+        background-color: var(--ds-background-input-hovered);
+        color: var(--ds-text);
+    }
+
+    .izqUfG {
+        background-color: var(--ds-background-input);
+        color: var(--ds-text);
+    }
+
+    .izqUfG > textarea {
+        color: var(--ds-text);
+    }
+
+    .css-r7v16p-control,
+    .css-r7v16p-control:hover {
+        background-color: var(--ds-background-neutral-hovered);
+    }
+
+    button.aui-button,
+    a.aui-button {
+        color: var(--ds-link);
+    }
+
+    input[id="search-repository-input"] {
+        color: var(--ds-text);
+    }
+
+    .css-uunpaj:hover,
+    .css-uunpaj:focus {
+        background-color: var(--ds-background-neutral-subtle-hovered);
+        box-shadow: var(--ds-background-neutral-subtle-hovered) -4px 0px 0px 0px, var(--ds-background-neutral-subtle-hovered) 4px 0px 0px 0px;
+    }
+
+    .graph-domain-message,
+    .graph-header-right-part,
+    #graphs #graphs-content .axis text,
+    #js-contributors .person svg text,
+    #js-commit-activity-detail .days text,
+    #js-punchcard .label {
+        color: var(--ds-text);
+        fill: var(--ds-text);
+    }
+
+    #js-punchcard circle.day {
+        fill: #bbc;
+    }
+
+    #graphs #graphs-content .axis line {
+        stroke: #555;
+    }
+
+    .css-2a8xou {
+        color: var(--ds-text);
+    }
+
+
+
+
+    div[aria-label="Help"] > a,
+    div[aria-label="Information"] a,
+    div[aria-label="Legal"] a {
+        color: var(--ds-link);
+    }
+
+    div[aria-label="Help"] > div[data-ds--menu--heading-item="true"],
+    div[aria-label="Information"] > div[data-ds--menu--heading-item="true"],
+    div[aria-label="Legal"] > div[data-ds--menu--heading-item="true"] {
+        color: var(--ds-text);
+    }
+
+    section[data-qa="commit-list-styles"] span[data-testid="branch-sync-info-inline"] button {
+        color: var(--ds-link) !important;
+    }
+
+    body.adg3 .aui-select2-container.select2-container .select2-choice,
+    body.adg3 .aui-select2-container.select2-container .select2-choice:visited,
+    body.adg3 .aui-select2-container.select2-container a.select2-choice,
+    body.adg3 .aui-select2-container.select2-container.select .select2-choice,
+    body.adg3 .aui-select2-container.select2-container.select .select2-choice:visited,
+    body.adg3 .aui-select2-container.select2-container.select a.select2-choice,
+    form.aui:not(.aui-legacy-forms) .text {
+        background-color: var(--ds-background-input) !important;
+        color: var(--ds-text-lowEmphasis) !important;
+    }
+
+    .aui-tabs > .tabs-menu .menu-item a,
+    .aui-tabs > .tabs-menu .menu-item a:link,
+    .aui-tabs > .tabs-menu .menu-item a:visited,
+    body.adg3 table.aui > thead > tr > th {
+        color: var(--ds-text)
+    }
+
+    body.adg3 table.aui:not(.preserve-links) > tbody > tr > td a {
+        color: var(--ds-link)
+    }
+
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a,
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:active,
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:focus,
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:hover,
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:link,
+    .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:visited,
+    .aui-tabs > .tabs-menu .menu-item.active-tab a,
+    .aui-tabs > .tabs-menu .menu-item.active-tab a:active,
+    .aui-tabs > .tabs-menu .menu-item.active-tab a:focus,
+    .aui-tabs > .tabs-menu .menu-item.active-tab a:hover,
+    .aui-tabs > .tabs-menu .menu-item.active-tab a:link,
+    .aui-tabs > .tabs-menu .menu-item.active-tab a:visited {
+        color: #bbf;
+    }
+
+    table.aui > tbody > tr,
+    table.aui > tfoot > tr {
+        background-color: var(--ds-background-information);
+        color: var(--ds-text);
+    }
+
+    div[data-testid="branch-restriction-modal-dialog-content--body"] label {
+        /*color: var(--ds-text);*/
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    /* Links inside the invert area should still be readable, darn it. */
+    div[data-testid="branch-restriction-modal-dialog-content--body"] label a {
+        filter: hue-rotate(180deg) saturate(200%) brightness(100%) invert(100%);
+    }
+
+
+    div[data-testid="branch-restriction-modal-dialog-content--body"] div[class$="control"] {
+        background-color: var(--ds-background-neutral);
+        border-color: var(--ds-background-neutral-subtle)
+    }
+
+    div[data-testid="branch-restriction-modal-dialog-content--body"] div[class$="control"] .css-16i50qr-multiValue {
+        background-color: var(--ds-background-neutral-subtle-hovered);
+    }
+
+    .css-1gkei44-multiValue {
+        background-color: var(--ds-background-neutral-subtle);
+        color: var(--ds-text-inverse);
+    }
+
+
+    .css-1hscgoa {
+        color: var(--ds-text);
+    }
+
+    .css-cbn15f,
+    a.css-ni9sev {
+        color: var(--ds-link) !important;
+    }
+
+    .compare-widget .compare-widget-form .metadata {
+        color: #aaa;
+    }
+
+    .compare-widget .compare-widget-form .repo-title .repo-owner,
+    .compare-widget .compare-widget-form .repo-title {
+        color: var(--ds-link);
+        filter: saturate(100%) brightness(80%);
+    }
+
+
+    body.adg3 .aui-nav-breadcrumbs a,
+    body.adg3 .aui-nav-breadcrumbs > li,
+    body.adg3 .aui-nav-breadcrumbs > li + li::before {
+        color: var(--ds-link);
+    }
+
+    .css-1ezm1k2 a,
+    .css-1ezm1k2 a:hover,
+    .css-1ezm1k2 a:focus {
+        color: #aaf;
+    }
+
+    .css-odi3kb:hover,
+    .css-odi3kb:focus {
+        background-color: #113;
+        box-shadow: rgb(17, 17, 51) -4px 0px 0px 0px, rgb(51, 51, 51) 4px 0px 0px 0px;
+        border-radius: 3px;
+    }
+
+    .css-1eei1bn {
+        color: #aac;
+    }
+
+    table thead,
+    table tbody,
+    table tfoot {
+        border-bottom: 2px solid #555;
+    }
+
+    table thead th span {
+        color: #bbb;
+    }
+
+    div[data-qa="create-repository-button"] a span {
+        color: var(--ds-link);
+    }
+
+    .css-15eg463-placeholder,
+    .css-q68uj span,
+    button.css-1qpjcoh span {
+        color: var(--ds-link) !important;
+    }
+
+    .css-1jx2ham-control:hover,
+    .css-ecjyr5-control:hover {
+        background-color: #113;
+        border-color: #113;
+    }
+
+    button[data-testid="profile-button"][type="button"]:hover,
+    button[data-testid="profile-button"][type="button"] :hover,
+    button[data-testid="horizontal-nav-help-button"][type="button"]:hover,
+    button[data-testid="horizontal-nav-help-button"][type="button"] :hover {
+        background-color: var(--ds-background);
+    }
+
+    button[data-testid="ref-selector-trigger"] > span {
+        color: var(--ds-link);
+    }
+
+    .css-1s0fs6f {
+        background-color: var(--ds-background-input);
+        border-color: #555;
+        color: var(--ds-text);
+    }
+
+    .css-1s0fs6f button {
+        color: #aaa !important;
+    }
+
+    article[data-qa="readme-container"] code {
+        background-color: #111;
+    }
+
+    .css-1jmpi03 {
+        background-color: var(--ds-background-default)
+    }
+
+    .css-1530p29 {
+        background-color: var(--ds-background-neutral-subtle)
+    }
+
+    .css-hakgx8/*,
+    .css-hakgx8 svg*/
+    {
+        color: var(--ds-text-subtle)
+    }
+
+    .ebwdvol4 {
+        color: var(--ds-text-lowEmphasis)
+    }
+
+    .css-1wgdpuu,
+    .css-t44v0r,
+    .css-1olrtn {
+        color: var(--ds-text)
+    }
+
+    .css-1wgdpuu img {
+        filter: brightness(200%) saturate(0);
+        color: #f00 !important;
+    }
+
+    .css-e3ot2y {
+        background-color: var(--ds-background-default);
+    }
+
+    div.css-z25nd1 a,
+    div.css-z25nd1 button,
+    div.css-z25nd1 span[role="menuitem"] {
+        color: var(--ds-text) !important;
+        background-color: #225 !important;
+    }
+
+    div.css-z25nd1 a:hover,
+    div.css-z25nd1 button:hover,
+    div.css-z25nd1 span[role="menuitem"]:hover,
+    div.css-z25nd1 span[role="menuitem"] :hover {
+        color: var(--ds-text) !important;
+        background-color: #114 !important;
+    }
+
+    div.css-z25nd1 button.css-1l4j2co {
+        background-color: #22b !important;
+        color: #ddd !important;
+    }
+
+    div.css-z25nd1 button.css-1h2061w {
+        background-color: #22f !important;
+        color: #ddd !important;
+    }
+
+    .css-4avucx-control {
+        background-color: #225 !important;
+        border-color: #336 !important;
+        color: var(--ds-text) !important;
+    }
+
+    .css-3wv91y-control {
+        background-color: #225 !important;
+        border-color: #33f !important;
+        color: var(--ds-text) !important;
+    }
+
+    .css-lrg2au-singleValue,
+    .css-gg6ksl-indicatorContainer {
+        color: var(--ds-text)
+    }
+
+    .css-gg6ksl-indicatorContainer:hover {
+        color: var(--ds-text-selected);
+    }
+
+    .css-4avucx-control:hover {
+        background-color: #114;
+        border-color: #336;
+        color: var(--ds-text)
+    }
+
+    .css-26l3qy-menu {
+        background-color: #225;
+    }
+
+    .css-18ng2q5-group {
+        color: var(--ds-text-selected);
+        border-bottom: 2px solid #557;
+    }
+
+    .css-1q619vg-option {
+        background-color: #114;
+        border-bottom: 2px solid #335;
+    }
+
+    .css-jtaxry-option {
+        border-bottom: 2px solid #335;
+    }
+
+    .css-84l4l4:hover,
+    .css-84l4l4:visited,
+    .css-84l4l4:focus,
+    .css-84l4l4:active,
+    .css-84l4l4 {
+        color: var(--ds-link)
+    }
+
+    .css-7km9kb {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        min-width: 156px;
+        width: 100%;
+        max-width: 208px;
+        background-image: linear-gradient(rgb(71, 71, 135) 33%, #222 33%);
+        box-shadow: var(--ds-shadow-raised, 0 1px 1px rgba(9, 30, 66, 1), 0 0 1px 1px rgba(9, 30, 66, 0.5));
+        border-radius: 3px;
+    }
+
+    small {
+        color: #bbb;
+    }
+
+    .css-1r3ejc,
+    .css-1r3ejc:hover,
+    .css-1r3ejc:focus {
+        color: var(--ds-link);
+    }
+
+    /*
+    label.css-2a8xou {
+        color: var(--ds-text)
+    }
+    */
+    th.css-1v02n3u {
+        color: var(--ds-text-subtle)
+    }
+
+    .css-1sf8zjy,
+    .css-1sf8zjy:hover,
+    .css-1sf8zjy:focus {
+        color: var(--ds-link);
+    }
+
+    .css-jfpkqj:hover,
+    .css-jfpkqj:focus {
+        background-color: #225;
+        box-shadow: #225 -4px 0px 0px 0px, #225 4px 0px 0px 0px;
+        border-radius: 3px;
+    }
+
+    .css-1nkownu {
+        color: var(--ds-text-subtle);
+    }
+
+    .css-2iyn1h,
+    .css-2iyn1h:hover,
+    .css-2iyn1h:focus {
+        color: var(--ds-link);
+    }
+
+    [headers="started"],
+    [headers="duration"] {
+        color: var(--ds-text) !important;
+    }
+
+    .css-1yk35ib,
+    .css-1yk35ib:hover,
+    .css-1k35ib:focus,
+    .css-13ub8oq a,
+    .css-13ub8oq:hover a,
+    .css-13ub8oq:focus a,
+    .css-bbox2b a {
+        color: var(--ds-link);
+    }
+
+    section[aria-label="Sidebar"] > div:nth-child(2n),
+    section[aria-label="Sidebar"] section {
+        background-color: #222;
+    }
+
+    button.css-61hhp9,
+    button.css-1atw7u1 {
+        color: var(--ds-text) !important;
+    }
+
+    .css-1ul4m4g {
+        color: var(--ds-link);
+        background-color: #3a3a3a;
+    }
+
+    .div {
+        grid-area: nested-comment-area;
+        background-color: #0f0 !important;
+    }
+
+    .div {
+        grid-area: comment-area;
+        background-color: #f00 !important;
+    }
+
+    div.css-h7crck {
+        background-color: #1b2638;
+    }
+
+    .bitkit-diff-inline-content-container {
+        background-color: #0b1628;
+    }
+
+    .css-17a0yj0 > div > div:first-of-type {
+        background-color: #0b1628;
+    }
+
+    [data-testid="file-header"] {
+        background-color: #232e40;
+    }
+
+    [data-testid="file-header"] button {
+        color: #ccc !important;
+    }
+
+    [data-qa="pr-header-actions-drop-down-menu-styles"] button {
+        color: #ccc !important;
+    }
+
+    [data-qa="pr-header-page-header-wrapper"] small {
+        color: #ccc;
+    }
+
+    [data-qa="pr-header-page-header-wrapper"] nav ol li a {
+        color: #ccc;
+    }
+
+    div[aria-labelledby="pull-request-description-panel"]:hover,
+    div[aria-labelledby="pull-request-description-panel"]:focus {
+        background: #224;
+    }
+
+    main[id="pull-request-details"] > div > div > section > div:first-child > div:first-child:hover {
+        background-color: #224;
+    }
+
+    button.css-r4u1z {
+        color: var(--ds-text) !important;
+    }
+
+    input[name="inlineEdit"] {
+        color: var(--ds-text-highEmphasis);
+    }
+
+
+    #bitbucket-navigation div a div {
+        color: #ccc !important;
+    }
+
+    /* Bitbucket, oh so helpfully, seems to have multiple completely unrelated widgets for doing code diffs, that look the same. */
+    #repo-content #commit > section > h1 {
+        color: var(--ds-text);
+    }
+
+    .bitkit-diff-wrapper-diff {
+        color: #ccc;
+    }
+
+    .bitkit-diff-wrapper-diff .chunk-heading-wrapper,
+    .bitkit-diff-wrapper-diff .chunk-heading,
+    .bitkit-diff-wrapper-diff .chunk-heading-middle,
+    .bb-udiff .heading,
+    .bb-udiff .heading h1,
+    .bb-udiff .heading button,
+    .bb-udiff .heading a,
+    .bb-udiff .heading .aui-icon {
+        background-color: #0b1628;
+        color: #ccc !important;
+    }
+
+    .bitkit-diff-wrapper-diff .line-wrapper.type-normal,
+    .refract-content-container .source,
+    .diff-content-container,
+    .css-1tclwr7 .monaco-editor .margin-view-overlays,
+    .css-1tclwr7 .monaco-editor .line-numbers,
+    .css-1tclwr7 .monaco-editor .line-numbers a,
+    .css-1tclwr7 .monaco-editor .line-numbers a:hover,
+    .css-1tclwr7 .monaco-editor .line-numbers a:focus,
+    .monaco-editor,
+    .monaco-editor .inputarea.ime-input {
+        background-color: #0b1628;
+        color: var(--ds-text);
+    }
+
+    .monaco-editor-background {
+        background-color: #0b1628;
+    }
+
+    .monaco-editor-background div.view-lines {
+        filter: brightness(190%);
+    }
+
+    .bitkit-diff-wrapper-diff .line-wrapper.type-add,
+    .refract-container .addition pre.source {
+        background-color: #0b3016;
+    }
+
+    .bitkit-diff-wrapper-diff .line-wrapper.type-del,
+    .refract-container .deletion pre.source {
+        background-color: #300b16;
+    }
+
+    .bitkit-diff-wrapper-diff .code-component del,
+    .refract-container.word-diff:not(.disable-word-diff) .deletion pre.source del {
+        background-color: #902b36;
+        color: #fff;
+    }
+
+    .bitkit-diff-wrapper-diff .code-component ins,
+    .refract-container.word-diff:not(.disable-word-diff) .addition pre.source ins {
+        background-color: #2b9036;
+        color: #fff;
+    }
+
+    .bitkit-diff-wrapper-diff .line-numbers,
+    .bitkit-diff-wrapper-diff .line-numbers .line-number-permalink,
+    .bitkit-diff-wrapper-diff .show-more-lines-button,
+    .refract-container .gutter,
+    .refract-container .gutter .line-numbers::before,
+    .refract-container .gutter .line-numbers::after,
+    .refract-container .skipped-container .line-numbers-skipped,
+    .refract-container .skipped-container .line-numbers-skipped .ellipsis {
+        background-color: #232e40;
+        color: #ccc;
+    }
+
+    .refract-container .gutter:hover,
+    .refract-container .gutter:hover .line-numbers::before,
+    .refract-container .gutter:hover .line-numbers::after {
+        background-color: #131e30;
+    }
+
+    .skipped-top::before,
+    .skipped-middle::before {
+        background: rgba(0, 0, 0, 0);
+        border-top: 0px solid;
+        border-bottom: 0px solid;
+        outline: 1px solid #dfe1e6;
+        outline-offset: -2px
+    }
+
+    .skipped-top::before {
+        background: rgba(0, 0, 0, 0);
+        border-top: 0px solid;
+        border-bottom: 0px solid;
+        outline: 0px solid #dfe1e6;
+        outline-offset: -2px
+    }
+
+
+    .refract-container .skipped-container::after {
+        background-color: rgb(0, 0, 0, 0);
+    }
+
+    [data-testid="comment-filter--avatar-group"] div[role="presentation"] :hover,
+    .css-c7p0e4 {
+        background-color: transparent;
+    }
+
+    [data-testid="comment-filter--avatar-group"] div[role="presentation"] :hover button span {
+        background-color: rgb(193, 199, 208);
+    }
+
+
+    [data-testid="expanded-JiraIssues"] a {
+        background: #225;
+    }
+
+    [data-testid="expanded-JiraIssues"] a:hover {
+        background: #447;
+    }
+
+    .kxFjCC:hover {
+        background-color: #446;
+    }
+
+    .css-1gbixtc {
+        background-color: #446;
+    }
+
+    section[data-qa="commit-list-styles"] table tbody tr:hover {
+        background-color: #446;
+        box-shadow: rgb(51, 51, 85) -4px 0px 0px 0px, rgb(51, 51, 85) 4px 0px 0px 0px;
+    }
+
+    section[data-qa="commit-list-styles"] thead,
+    section[data-qa="commit-list-styles"] tbody,
+    section[data-qa="commit-list-styles"] tfoot {
+        border-bottom: 2px solid #557;
+    }
+
+    section[data-qa="commit-list-styles"] thead tr th {
+        color: var(--text-color)
+    }
+
+    section[data-qa="commit-list-styles"] .lzpgu:hover {
+        background-color: #446;
+    }
+
+
+
+    .aui-button.aui-button-light,
+    a.aui-button.aui-button-light,
+    .aui-button:visited.aui-button-light {
+        background-color: var(--ds-background-neutral-subtle)
+    }
+
+    .adg3 #issuetable > thead .active,
+    .adg3 .issue-table > thead .active,
+    .adg3 #issuetable > thead .sortable:hover,
+    .adg3 .issue-table > thead .sortable:hover {
+        background-color: var(--ds-background-input-pressed);
+    }
+
+    .adg3 #issuetable tr.focused,
+    .adg3 .issue-table tr.focused {
+        background-color: var(--ds-background-discovery-hovered);
+        border-color: var(--ds-background-neutral-subtle);
+    }
+
+    .check-list-select .check-list-field-container .check-list-field {
+        color: var(--ds-text);
+    }
+
+    .adg3 #issuetable td:not(.issuekey, .summary, .stsummary) a,
+    .adg3 .issue-table td:not(.issuekey, .summary, .stsummary) a,
+    .adg3 #issuetable td:not(.issuekey, .summary, .stsummary) a.parentIssue,
+    .adg3 .issue-table td:not(.issuekey, .summary, .stsummary) a.parentIssue {
+        color: var(--ds-link);
+    }
+
+    div[data-test-id="issue.views.issue-base.content.issue-links.group-container"] div[role="presentation"] :hover {
+        background-color: var(--ds-background-neutral-subtle-hovered);
+    }
+
+    button.sidebar-expander-panel-heading {
+        background-color: #224;
+    }
+
+    button.css-1wodtvz {
+        color: var(--ds-link) !important;
+    }
+
+    body.adg3 section h1,
+    body.adg3 section h2,
+    body.edg3 section h3 {
+        color: #ccc;
+    }
+
+    form.aui:not(.aui-legacy-forms) label,
+    form.aui:not(.aui-legacy-forms) legend {
+        color: var(--ds-text)
+    }
+
+    a[data-qa="pull-request-row-link"] {
+        color: var(--ds-link);
+    }
+
+    .css-1sj2ynz {
+        color: #aaa;
+    }
+
+    .css-lo8vgq:hover,
+    .css-lo8vgq:focus {
+        background: var(--ds-background-neutral-subtle);
+        box-shadow: var(--ds-background-neutral-subtle) -4px 0px 0px 0px, var(--ds-background-neutral-subtle) 4px 0px 0px 0px;
+    }
+
+    div[data-testid="expanded-ReviewerStatuses"] section[aria-label="Review status"] img[alt=""] {
+        filter: brightness(50%);
+    }
+
+    .css-10z6hxr:hover,
+    .css-10z6hxr:focus,
+    .css-10z6hxr:focus-within,
+    .ihdedv:hover {
+        background: var(--ds-background-neutral-subtle);
+    }
+
+    span[aria-label="expand"] {
+        --icon-primary-color: #888 !important;
+    }
+
+
+
+
+
+
+    div[data-test-id="issue.views.issue-base.content.issue-links.group-container"] div[role="presentation"] .css-1gly9cj {
+        color: #ddd;
+    }
+
+    div[data-test-id="issue.views.issue-base.content.issue-links.group-container"] div[role="presentation"] a {
+        color: #ddd;
+    }
+
+    .akEditor {
+        background-color: #446;
+    }
+
+
+    .css-vs39fi,
+    .css-ypnnxr {
+        background-color: var(--ds-background-neutral)
+    }
+
+    .ak-editor-panel[data-panel-type="info"],
+    .ak-editor-panel[data-panel-type="info"] p {
+        background-color: #337 !important;
+        color: #bbb !important;
+    }
+
+    .ak-editor-panel[data-panel-type="info"] .ak-editor-panel__icon {
+        color: #77f !important;
+    }
+
+    .ak-editor-panel[data-panel-type="success"],
+    .ak-editor-panel[data-panel-type="success"] p {
+        background-color: #373 !important;
+        color: #bbb !important;
+    }
+
+    .ak-editor-panel[data-panel-type="success"] .ak-editor-panel__icon {
+        color: #bfb !important;
+    }
+
+
+    .ak-editor-panel[data-panel-type="note"],
+    .ak-editor-panel[data-panel-type="note"] p {
+        background-color: #334 !important;
+        color: #bbb !important;
+    }
+
+    .css-1n0o2vx:hover {
+        background: var(--ds-background-neutral-hovered) !important;
+    }
+
+    .ak-editor-panel[data-panel-type="note"] .ak-editor-panel__icon {
+        color: #77f !important;
+    }
+
+    .ak-editor-panel[data-panel-type="warning"],
+    .ak-editor-panel[data-panel-type="warning"] p {
+        background-color: #440 !important;
+        color: #bbb !important;
+    }
+
+    .ak-editor-panel[data-panel-type="warning"] .ak-editor-panel__icon {
+        color: #ffa !important;
+    }
+
+
+    .ak-editor-panel[data-panel-type="error"],
+    .ak-editor-panel[data-panel-type="error"] p {
+        background-color: #511 !important;
+        color: #bbb !important;
+    }
+
+    .ak-editor-panel[data-panel-type="error"] .ak-editor-panel__icon {
+        color: #de350b !important;
+    }
+
+
+
+
+
+    .workflow-designer {
+        background: #222;
+    }
+
+    .workflow-designer .zoom-control .aui-button {
+        background: #444 !important;
+        color: #eee;
+    }
+
+    body.adg3 .wiki-content h1,
+    body.adg3 ak-editor-bitbucket .ProseMirror h1,
+    body.adg3 h1 {
+        color: #eee;
+    }
+
+    .aui-nav-heading {
+        color: #cce;
+    }
+
+    body.adg3 .aui-navgroup-vertical .aui-nav .aui-nav-selected > a:hover {
+        color: #4ba1fb;
+    }
+
+    body.adg3 .aui-navgroup-vertical .aui-nav .aui-nav-selected > a {
+        color: #3ec4fd;
+    }
+
+    body.adg3 .aui-navgroup-vertical .aui-nav > li > a:hover,
+    body.adg3 .aui-navgroup-vertical .aui-nav > li > a {
+        color: #8ec4fd
+    }
+
+    div[id=workflow-designer1] rect[fill="#ffffff"] {
+        stroke: #f00 !important;
+        fill: #338;
+    }
+
+    div[id=workflow-designer1] text[fill="#333333"] {
+        fill: #bbb;
+    }
+
+    div[id=workflow-designer1] path[fill="#172b4d"] {
+        fill: #0f0 !important;
+    }
+
+
+    div[id=workflow-designer1] path[stroke="#172b4d"] {
+        stroke: #0f0 !important;
+    }
+
+    div[id=workflow-designer1] rect[fill="#646464"] {
+        fill: #ff0 !important;
+        stroke: #0ff !important;
+    }
+
+    div[id=workflow-designer1] rect[fill="#172b4d"] {
+        fill: #11f !important;
+        stroke: #f00 !important;
+    }
+
+    div[background-color="#ffffff"] {
+        background-color: #333 !important;
+    }
+
+    header[role="banner"],
+    [data-testid="Content"],
+    html,
+    body {
+        background-color: #333 !important;
+    }
+
+    /*
+    header a span,
+    .dqyfbQ,
+    .css-pjv25p,
+    .jRBaLt {
+        color: #8ec4fd;
+    }
+    */
+    .aZwtJ {
+        box-shadow: none;
+        margin: 0px;
+    }
+
+    .iuihaW {
+        margin: 0px;
+    }
+
+    /* issue change droddown */
+    .jRBaLt:hover {
+        color: #bdddff;
+    }
+
+    /* gh branches */
+    [data-test-id="issue.views.issue-base.context.context-items"] a[tabindex] div {
+        color: #8ec4fd;
+    }
+
+    /* issue fields for react dropdowns */
+    [class^='FieldBaseWrapper'] [tabindex] {
+        background-color: #333 !important;
+        border-color: transparent !important;
+    }
+
+    [class^='FieldBaseWrapper'] [tabindex]:hover {
+        background-color: #444 !important;
+    }
+
+    [class^='FieldBaseWrapper'] div {
+        color: #ccc;
+        background-color: #333 !important;
+    }
+
+    [class^='FieldBaseWrapper'] [tabindex] span + span {
+        color: #8ec4fd;
+    }
+
+
+    /* translucent background when story is open in modal */
+    .igoDWs {
+        background-color: rgba(50, 70, 70, 0.64);
+    }
+
+    body h1,
+    body h2,
+    body h3,
+    body h4,
+    body h5,
+    body h6 {
+        color: #ccf;
+    }
+
+    .status-active {
+        color: #0c0;
+    }
+
+    /*
+    svg {
+        color: #8ec4fd;
+    }
+    *
+    /*
+    span[role="presentation"] {
+        fill: #8ec4fd;
+    }
+    */
+    /*
+    div[role="presentation"] :hover {
+        background-color: #225;
+    }
+    */
+    /*
+    header button span {
+        color: #8ec4fd;
+    }
+    */
+    #ghx-swimlane-header-stalker,
+    #ghx-column-header-group.ghx-fixed {
+        background-color: #333;
+    }
+
+    .ghx-issue,
+    .adg3 .js-issue.ghx-selected,
+    .adg3 .js-issue.ghx-selected .ghx-items-container {
+        background-color: #333;
+    }
+
+    .adg3 .js-issue.ghx-selected,
+    .adg3 .js-issue.ghx-selected .ghx-items-container {
+        background-color: #1c2c37;
+    }
+
+    .adg3 .ghx-issue-compact:hover,
+    .adg3 .ghx-issue:hover {
+        background-color: #444;
+    }
+
+    .ghx-swimlane-header::after {
+        background: none;
+        box-shadow: none;
+    }
+
+    .adg3 .ghx-summary,
+    .adg3 .ghx-summary .ghx-inner {
+        color: #8ec4fd;
+    }
+
+    [data-testid="atlassian-navigation--primary-actions"]:after {
+        background: none;
+    }
+
+    [data-test-id="issue.views.issue-base.context.context-items.primary-items"] button {
+        background-color: #333 !important;
+    }
+
+
+    /* Main area */
+    [data-test-id="software-board.board"],
+    .aui-page-panel,
+    #ghx-pool,
+    [data-ds--page-layout--slot="main"] {
+        background-color: #333;
+        color: #ddd;
+    }
+
+    /* Swimlane columns */
+    .adg3 .ghx-column-headers .ghx-column,
+    .adg3 .ghx-columns .ghx-column {
+        background-color: #222;
+    }
+
+    .adg3 .ghx-columns {
+        margin-top: .4em;
+    }
+
+    .adg3 .ghx-columns .ghx-column {
+        padding-top: .1em;
+    }
+
+    /* Swimlane headers */
+    .ghx-swimlane-header {
+        background-color: #333 !important;
+        border: 1px solid #444;
+    }
+
+    .ghx-swimlane-header .ghx-expander {
+        left: 1em;
+    }
+
+    .ghx-swimlane-header .ghx-heading {
+        margin-left: 1.6em;
+    }
+
+    .ghx-heading span {
+        color: #bbb !important;
+    }
+
+    /* Swimlane Inner */
+    .ReactVirtualized__Grid__innerScrollContainer {
+        background-color: #555 !important;
+    }
+
+    /* sub tasks */
+    .adg3 .ghx-column .ghx-parent-group {
+        background-color: #555;
+    }
+
+    /* subtask parent task label */
+    .adg3 .ghx-key {
+        color: #ddd;
+    }
+
+    /***
+     * Left-hand Nav
+    ***/
+    /* remove top white border */
+    .css-1u84ut1,
+    .css-77arw9::after {
+        background: #222;
+    }
+
+    .css-ac0tta::before,
+    .css-77arw9::before {
+        background: #333 !important;
+    }
+
+    .css-cdxr6t {
+        background-color: #444;
+    }
+
+    [data-testid="ContextualNavigation"] #bitbucket-navigation a,
+    .css-1t5na7c.css-1t5na7c {
+        background-color: #0b1628;
+    }
+
+    .css-t3yiul.css-t3yiul {
+        background-color: #000618;
+    }
+
+
+    div.css-1h2b0g4 {
+        color: var(--ds-text-selected)
+    }
+
+    /* [data-testid="ContextualNavigation"] div:first-child a :hover, */
+    /*
+    [data-testid="ContextualNavigation"] [role="presentation"] :hover {
+        background-color: #225 !important;
+    }
+    */
+    /*
+    [role="presentation"] [data-testid="NavigationItem"] {
+        background-color: #333;
+    }
+    */
+    [data-test-id="software-board.board-area"] section div {
+        background-color: #333;
+    }
+
+    section div[data-rbd-droppable-context-id] {
+        background-color: #222;
+    }
+
+    [data-test-id="software-board.board-scroll"] section span {
+        color: #ccc !important;
+    }
+
+    section div[data-test-id="platform-board-kit.common.ui.column-header.header.column-header-container"] div {
+        background-color: #222;
+    }
+
+    [role="dialog"],
+    .ghx-issue-compact,
+    .ghx-issue-compact .ghx-end {
+        background-color: #333;
+        color: #ccc;
+    }
+
+    [role="presentation"] a {
+        color: #8ec4fd;
+    }
+
+    /*
+    a[href^="/issues/?jql=labels"] {
+        filter: invert(1);
+    }
+    */
+    [data-test-id="issue.views.field.select.common.select-inline-edit.components"] [role="presentation"] a {
+        filter: invert(1);
+    }
+
+    [role="presentation"] p {
+        color: #ccc;
+    }
+
+    .llCsQv:hover {
+        background-color: #222;
+    }
+
+    [data-rbd-draggable-context-id] {
+        background-color: #444;
+    }
+
+    .dKslwV {
+        background-color: #333;
+    }
+
+    .hQVuBn {
+        background-color: #444;
+    }
+
+    .jODjkq,
+    .ak-editor-content-area {
+        background-color: #111;
+    }
+
+    /*
+    div.ak-editor-panel__content p {
+        color: #f00;
+    }
+    */
+    [data-test-id="issue.views.issue-details.issue-layout.left-most-column"],
+    [data-test-id="issue.views.issue-details.issue-layout.right-most-column"],
+    .sc-hMapFE.hDMqWg,
+    .css-4rxc6l,
+    #jira-issue-header {
+        background-color: #222;
+    }
+
+    .query-component .search-container[data-mode="basic"] .search-field-container .criteria-actions button.add-criteria {
+        color: var(--ds-link);
+    }
+
+    [data-test-id="profilecard-next.ui.profilecard.profilecard-trigger"] div,
+    .llCsQv,
+    .cfYUOi {
+        color: #aaa;
+    }
+
+    ::marker {
+        color: #ccc !important;
+    }
+
+    .hKALUX {
+        background-color: transparent;
+    }
+
+    .css-ojvx30 {
+        padding: 10px;
+    }
+
+    .css-821jbb a {
+        padding: 5px 8px;
+        border-radius: 5px;
+        color: #8ec4fd !important;
+    }
+
+    /* comment editor */
+    /* Doesn't have any data property or anything else :/ */
+    [data-test-id="issue.activity.comments-list"] + span > div > div {
+        background-color: #333;
+        padding: 10px;
+    }
+
+    [data-test-id="issue.activity.comment"],
+    .akEditor {
+        background-color: #333;
+    }
+
+    .fZTloP {
+        color: #ccc;
+    }
+
+    [data-test-id="issue.activity.comment"],
+    .akEditor > div {
+        background-color: #333;
+    }
+
+    [data-test-id="issue.activity.comment"] input,
+    #create-issue-dialog .jira-dialog-heading,
+    #edit-issue-dialog .jira-dialog-heading,
+    .jira-dialog .jira-dialog-content,
+    #create-issue-dialog .form-body,
+    #create-issue-dialog .form-footer,
+    #edit-issue-dialog .form-body,
+    #edit-issue-dialog .form-footer,
+    .ghx-backlog-container {
+        background-color: #222;
+        color: #ccc;
+    }
+
+    nav > div::after {
+        background: #333 !important;
+    }
+
+    nav a,
+    nav a div,
+    nav button,
+    nav button div {
+        background-color: #333;
+    }
+
+    nav a {
+        margin-bottom: 6px;
+    }
+
+    nav a:last-child {
+        margin-bottom: 0px;
+    }
+
+    nav div[data-section="true"] {
+        background-color: #333;
+        padding: 0px 6px 6px 6px;
+        margin-bottom: 6px;
+        border-radius: 6px;
+    }
+
+    nav button + a {
+        margin-top: 10px;
+    }
+
+    [data-placement="bottom-start"] {
+        background-color: #444;
+        padding: 10px;
+        box-shadow: -3px 3px 1px #00000850;
+    }
+
+    [data-placement="bottom-start"] a,
+    [data-placement="bottom-start"] a:visited {
+        color: var(--ds-link);
+    }
+
+    [data-placement="bottom-start"] div[role="group"] a:hover {
+        background-color: #336;
+        color: var(--ds-link);
+    }
+
+    [data-placement="bottom-start"] div[data-ds--menu--heading-item="true"] {
+        color: var(--ds-text-lowEmphasis);
+    }
+
+    .jira-dialog-heading {
+        width: auto;
+    }
+
+    .jira-dialog-content {
+        border-top: 10px solid #333;
+    }
+
+    .adg3 .js-issue.ghx-issue-compact:hover,
+    .adg3 .js-issue.ghx-issue-compact:hover .ghx-items-container {
+        background-color: #444;
+    }
+
+    /* "Active Sprints" header row buttons */
+    #ghx-quick-filters > ul > li > button,
+    /* quick filters main toggle */
+    .complete-sprint-container > button,
+    /* "complete sprint" btn */
+    .ghx-view-section > button {
+        /* "..." board menu */
+        background-color: #444;
+    }
+
+    #ghx-quick-filters > ul > li > button:hover,
+    .complete-sprint-container > button:hover,
+    .ghx-view-section > button:hover {
+        background-color: #555;
+    }
+
+    #ghx-quick-filters > ul > li > button span,
+    #ghx-quick-filters > ul > li > button,
+    .complete-sprint-container > button,
+    .ghx-view-section > button span {
+        color: #8ec4fd !important;
+    }
+
+    #ghx-quick-filters > ul:first-child > li:first-child {
+        padding-right: 0;
+    }
+
+    #ghx-quick-filters > ul:first-child > li:last-child {
+        margin-top: 0 !important;
+    }
+
+    #ghx-quick-filters > ul:first-child > li:last-child::before {
+        content: unset;
+    }
+
+    #ghx-quick-filters > ul > li button {
+        padding: 0 10px;
+    }
+
+    form.aui input[type="text"],
+    form.aui .multi-select,
+    form.aui .password,
+    form.aui .select,
+    form.aui .text,
+    form.aui .textarea,
+    form.aui .upfile {
+        background-color: #171717;
+        color: #ccc;
+    }
+
+    form.aui input[type="text"]:hover,
+    form.aui .multi-select:hover,
+    form.aui .password:hover,
+    form.aui .select:hover,
+    form.aui .text:hover,
+    form.aui .textarea:hover,
+    form.aui .upfile:hover,
+    form.aui .multi-select:focus,
+    form.aui .password:focus,
+    form.aui .select:focus,
+    form.aui .text:focus,
+    form.aui .textarea:focus,
+    form.aui .upfile:focus {
+        background-color: #111;
+        color: #ccc;
+    }
+
+    body.adg3 form.aui .buttons-container {
+        background-color: var(--ds-background)
+    }
+
+    body.adg3 form.aui .field-group .description,
+    body.adg3 form.aui fieldset.group .description {
+        color: var(--ds-text);
+    }
+
+    form.aui .field-group div.checkbox label,
+    form.aui .field-group div.radio label,
+    form.aui fieldset.group div.checkbox label,
+    form.aui fieldset.group div.radio label,
+    body.adg3 form.aui .field-group div.checkbox label,
+    body.adg3 form.aui .field-group div.radio label,
+    body.adg3 form.aui fieldset.group div.checkbox label,
+    body.adg3 form.aui fieldset.group div.radio label {
+        color: #8ec4fd;
+    }
+
+    .adg3 .ghx-issue-compact.ghx-flagged,
+    .adg3 .ghx-issue.ghx-flagged,
+    .jNNjZg {
+        background-color: #2d2c1e;
+    }
+
+    /* Issue - right hand column */
+    #jira-issue-header-actions {
+        background: #222;
+    }
+
+    .iOYrOa:hover {
+        background-color: #333;
+    }
+
+    [class^="ReadViewContentWrapper"] {
+        background-color: #1c1c1c;
+    }
+
+    div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button {
+        background-color: #333 !important;
+    }
+
+
+    /* integrations */
+    .jKClYf:hover,
+    .bxflKY:hover,
+    .tElYB:hover {
+        background-color: #333;
+    }
+
+    /* spotlight */
+    .fazorH,
+    .hLwMWC {
+        background-color: #333;
+        border: 1px solid #666;
+    }
+
+    /* Pinned Fields */
+    .iawEzm,
+    .UHdZE {
+        color: #8ec4fd;
+    }
+
+    /* branch names */
+    .kYMxji .sc-12nc76b-13 {
+        color: #8ec4fd;
+    }
+
+    div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button span {
+        color: #8ec4fd;
+    }
+
+    div[data-test-id="issue.views.issue-base.context.status-and-approvals-wrapper.status-and-approval"] div[data-test-id="issue.views.issue-base.foundation.status.status-field-wrapper"] button:hover {
+        background-color: #444 !important;
+    }
+
+    /* Linked Issues */
+    /*
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] div > ul {
+        background-color: #222;
+    }
+
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] div > ul > div {
+        background-color: #333;
+        border-radius: 3px;
+    }
+    */
+    /*** Activity ***/
+    /* Nav buttons (show) */
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button {
+        background-color: #333;
+        border-radius: 3px 3px 0 0;
+    }
+
+    /* button:hover */
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button.css-jhagr1 {
+        background-color: #555;
+    }
+
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > div > div > div > button.css-jhagr1 span {
+        color: #FFF;
+    }
+
+
+    div[role="tab"][aria-selected="false"] {
+        color: #ccc;
+    }
+
+    div[role="tab"][aria-selected="true"] {
+        color: #fff !important;
+    }
+
+    /* Comments */
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > span > span > div,
+    div[data-test-id="issue.views.issue-details.issue-layout.left-most-column"] > span > span > div > div {
+        background-color: #333;
+        padding: 10px 5px;
+        border-radius: 3px;
+    }
+
+    .ghx-zone-cell {
+        background-color: #222;
+    }
+
+    .ghx-zone-row.ghx-target-hover .ghx-zone-cell {
+        background-color: #111;
+    }
+
+    [data-testid^="inline-card"] {
+        background-color: #111;
+    }
+
+    .hlcLVe {
+        background-color: #222;
+    }
+
+    [data-test-id="common.components.virtual-table.table.content.scrollbars.vertical.virtual-table-scrollbar-wrapper"] [role="presentation"],
+    [data-test-id="common.components.virtual-table.table.content.scrollbars.vertical.virtual-table-scrollbar-wrapper"] [role="presentation"] {
+        background-color: #333 !important;
+    }
+
+    .sc-gvDkQG.ktIPzl {
+        background: transparent !important;
+    }
+
+    .virtual-table-row:hover,
+    .virtual-table-row:hover {
+        background-color: #222 !important;
+    }
+
+    /*
+    button {
+        background-color: #222 !important;
+    }
+    */
+    form.aui input[type="text"]:focus {
+        background-color: #111;
+    }
+
+    .css-1pjvlzd-menu {
+        background-color: #333;
+    }
+
+    .css-ouvcov-option,
+    .css-ouvcov-option:hover {
+        background-color: #666;
+    }
+
+    [data-test-id="search-dialog-input"] {
+        background-color: var(--ds-background-input, #222);
+        color: #ddd;
+    }
+
+    /* Main search dropdown */
+    [data-test-id='search-dialog-dialog-wrapper'] {
+        background-color: #222;
+    }
+
+    [data-test-id='search-dialog-advanced-search-link'] {
+        background-color: #333;
+    }
+
+    [data-test-id='search-dialog-dialog-wrapper'] a:hover {
+        background-color: #333;
+    }
+
+    [data-test-id='search-dialog-dialog-wrapper'] label,
+    [data-test-id='search-dialog-dialog-wrapper'] span {
+        color: #8ec4fd !important;
+    }
+
+    /* 
+       Many classes with font color scattered 
+       throught the search options :/ 
+    */
+    .css-lvvrvua,
+    .css-1ol1n65,
+    .css-1vvrvua,
+    .css-1gs3kbj {
+        color: #8ec4fd !important;
+    }
+
+    /* @name reference */
+    .jezugp,
+    .css-mwicx5:not(:hover):not(:active)/* Profile link */
+    {
+        color: #8ec4fd !important;
+    }
+
+    .ghx-sprint-meta .time {
+        background-color: #222;
+        padding: 2px 10px;
+        border-radius: 2px;
+        color: #8ec4fd !important;
+    }
+
+    /* pills */
+    .ictwIf,
+    .bUBHcu {
+        background-color: #111;
+    }
+
+    /* "Your work" tab */
+    .dnTWtq {
+        background-color: #333;
+    }
+
+    /* dropdowns */
+    .eKyyuE {
+        color: #8ec4fd;
+    }
+
+    .css-13623lg {
+        background-color: #333 !important;
+    }
+
+    .vYgnQ {
+
+        color: #8ec4fd;
+    }
+
+    .ekNyYA:hover {
+        background-color: #333;
+    }
+
+    [data-role="droplistContent"] {
+        background-color: #222;
+    }
+
+    /* Allows hover to be dark instead of white on all dropdowns */
+    /*
+    [id^='react-select-']:hover {
+        background-color: var(--ds-background-input-hovered,#333) !important
+    }
+*/
+    /* pop up from dropdowns */
+    div.css-0 .eJTYOk.eJTYOk {
+        background-color: #334 !important;
+        border-color: #334 !important;
+    }
+
+    .eJTYOk.eJTYOk :hover {
+        background-color: #445 !important;
+    }
+
+
+    [data-test-id="global-pages.home.ui.home"] a,
+    [data-test-id="global-pages.home.ui.home"] a * {
+        color: #8ec4fd !important;
+    }
+
+    [data-test-id="global-pages.home.ui.home"] section {
+        background-color: #444;
+    }
+
+    /* project cards */
+    [data-test-id="global-pages.home.ui.home"] section section > div {
+        background-color: #222;
+        border-color: #292929;
+    }
+
+    /* issues view */
+    .fbqYhg {
+        background-color: #222;
+    }
+
+    /* search */
+    .hIWHrB {
+        background-color: #222;
+    }
+
+    .hIWHrB:focus {
+        background-color: #1c1c1c;
+    }
+
+    /* welcome right panel */
+    .uwCBB {
+        background-color: #222;
+    }
+
+    .uwCBB * {
+        color: #8ec4fd !important;
+    }
+
+    .bBnubg {
+        background-color: #333;
+    }
+
+    .dqYoil {
+        background-color: #333;
+        color: #8ec4fd !important;
+    }
+
+
+    [data-ds--page-layout--slot="right-sidebar"] {
+        background-color: #222;
+    }
+
+    .code {
+        background-color: #333 !important;
+        color: #ccc !important;
+    }
+
+    .prismjs {
+        background-color: #335 !important;
+        color: #aaaaaa;
+    }
+
+    span.linenumber {
+        background-color: #668 !important;
+        color: #ffffff !important;
+    }
+
+    /* Fixes z-index of the epic labels and action button */
+    .zd1ddu-13 {
+        z-index: 2;
+    }
+
+    .o8lyvj-0 {
+        z-index: 2;
+    }
+
+    section div[id="ReactVirtualized__Grid__innerScrollContainer"] div {
+        background-color: #222;
+    }
+
+    .gnTJJk,
+    .css-1ohnhih {
+        color: #ccc;
+    }
+
+    .jDtDtm {
+        color: #8ec4fd;
+    }
+
+    a {
+        color: var(--ds-link);
+    }
+
+    a:hover {
+        color: #4ba1fb;
+    }
+
+    .ReactVirtualized__Grid__innerScrollContainer {
+        background-color: #555 !important;
+    }
+
+    .cdELFE {
+        background-color: #202124;
+    }
+
+    .iFVIyY {
+        background-color: #202124;
+    }
+
+    .lnnurR {
+        background: #444;
+    }
+
+    .cYQrJH {
+        color: #8ec4fd;
+    }
+
+    [aria-controls="HEADER-DROP-1"] {
+        background-color: #555;
+    }
+
+    /* Fix the backlogs background and make text readable */
+    [data-test-id="software-backlog.card-list.card.card-contents.interaction-layer.accessible-card"] {
+        background-color: #666;
+    }
+
+    a.cPExjy {
+        color: #8ec4fd !important;
+    }
+
+    .dHCABi {
+        color: #fff;
+    }
+
+    /* Fixes the Epic Left Rail in backlog */
+    [data-test-id="software-backlog-panel.common.ui.panel.container"] {
+        background-color: #444;
+    }
+
+    /*
+    .cqHPyU {
+        color: #8ec4fd;
+    }
+
+    .bAgqLe {
+        color: #8ec4fd;
+    }
+
+    .css-1nnf97w {
+        color: #8ec4fd;
+    }
+
+    .css-xua7vi {
+        color: #8ec4fd;
+    }
+
+    .css-1gly9cj {
+        color: #8ec4fd;
+    }
+    */
+    .css-1gly9cj:hover {
+        color: #fff;
+    }
+
+    .css-1gly9cj:hover {
+        color: #fff;
+    }
+
+    .css-1nnf97w [data-item-title] {
+        color: #fff;
+    }
+
+    .css-196lgr2 {
+        color: #8ec4fd;
+    }
+
+    .eRIObY {
+        color: #000;
+    }
+
+    .ldGASN {
+        background: #444;
+    }
+
+    span.css-19r5em7 {
+        color: #fff;
+    }
+
+    /* new issue */
+    /* Project dropdown 
+    Issue type dropdown
+*/
+    .css-1fz5jqa-control,
+    .css-bpp0bz-control,
+    .css-12aw7j7,
+    .css-1a7rm5r-control {
+        background-color: var(--ds-background-subtleNeutral-resting, #222);
+        border-color: var(--ds-border-neutral, #666);
+    }
+
+    .css-bpp0bz-control:hover,
+    .css-12aw7j7:hover,
+    .css-1a7rm5r-control:hover {
+        background-color: var(--ds-background-default, #111);
+        border-color: var(--ds-border-neutral, #555);
+    }
+
+    .css-56zytr-singleValue,
+    .css-18mjdzo {
+        color: #ccc;
+    }
+
+    .css-18mjdzo:hover {
+        color: black;
+    }
+}
+
+@-moz-document regexp(".*.atlassian.net/projects.*") {
+    body,
+    nav,
+    [role="banner"],
+    .aui-page-panel {
+        background-color: #333 !important;
+        color: #ccc !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #ddd;
+    }
+
+    .aui-page-header,
+    .aui-page-panel,
+    .aui-page-panel-nav {
+        background-color: #333;
+    }
+
+    [role='group'] a,
+    .css-b6ncbb,
+    [role='group'] button {
+        color: #8ec4fd !important;
+        background-color: #444;
+        margin-top: 5px;
+    }
+
+    .css-b6ncbb:hover,
+    button:hover {
+        background-color: #555 !important;
+    }
+
+
+    .css-b6ncbb * {
+        color: #8ec4fd !important;
+    }
+
+    .css-ojvx30 {
+        background-color: #333;
+    }
+
+    [role='group'] a:hover {
+        background-color: #555;
+    }
+
+    [data-enter-from="right"] [draggable] {
+        background-color: #444;
+        margin-top: 5px;
+    }
+
+    [data-enter-from="right"] [draggable]:hover {
+        background-color: #555;
+        cursor: pointer;
+    }
+
+    /*
+    a > *,
+    span {
+        color: #8ec4fd !important;
+    }
+    */
+    .css-1764c62::after {
+        background: none;
+    }
+}
+
+
+@-moz-document regexp(".*.atlassian.net/issues.*") {
+    html,
+    body,
+    .navigator-body,
+    header[role="banner"] {
+        background-color: #333 !important;
+        color: #ccc !important;
+    }
+
+    /*
+    nav ::after {
+        background: transparent !important;
+    }
+    */
+    a > * {
+        color: #8ec4fd !important;
+    }
+
+    nav,
+    .css-194d9bm {
+        background-color: #333 !important;
+        color: #ccc !important;
+    }
+
+    .css-1b03djw:hover {
+        background-color: #222 !important;
+    }
+
+    nav a,
+    nav a > *,
+    nav button,
+    nav button *,
+    svg,
+    svg path,
+    svg g,
+    svg * {
+        color: #8ec4fd !important;
+        fill: #8ec4fd !important;
+    }
+
+    nav button:hover,
+    nav button:active,
+    [aria-expanded="true"] {
+        background-color: #222 !important;
+    }
+}
+
+@-moz-document regexp("https://canned-responses-pro.com/insert.*") {
+    :root {
+        --ds-background-selected: #444;
+        --ds-surface: #333;
+        --ds-text-subtlest: #ccc;
+        --ds-text-subtle: #b9b9b9;
+        --ds-text-lowEmphasis: #ddd;
+        --ds-text: #bbb;
+        --ds-text-selected: #eee;
+        --ds-text-inverse: #fff;
+        --ds-text-brand: #0ff;
+        --ds-text-information: #aaf;
+        --ds-text-success: #6b6;
+        --ds--code--line-number-bg-color: #668;
+        --ds--code--line-number-color: #f00;
+        --ds-text-highEmphasis: #eef;
+        --text-highEmphasis: #eef;
+        --ds-text-mediumEmphasis: #ddf;
+        --ds-surface-overlay: #446;
+        --ds-background-neutral-subtle: #446;
+        --ds-background-neutral-subtle-hovered: #44a;
+        --ds-background-neutral: #335;
+        --ds-background-neutral-hovered: #33f;
+        --ds-background-input-hovered: #000;
+        --ds-background-input: #225;
+        --ds-background-input-pressed: #339;
+        --ds-background-default: #333;
+        --ds-background-subtleNeutral-resting: #449;
+        --ds-background-success: #141;
+        --ds-background-information: #114;
+        --ds-UNSAFE_util-transparent: transparent;
+        --ds-link: #8ec4fd;
+    }
+
+    body {
+        color: var(--ds-text);
+    }
+
+    /*
+    div.input-panel-wrapper {
+        background-color: #335 !important;
+        color: #ccc !important;
+    }
+    */
+    div.field-group div.input-panel-wrapper {
+        background-color: #222;
+    }
+
+    div.field-group div.input-panel-wrapper div.input-panel {
+        background-color: var(--ds-background-input);
+    }
+
+
+    .input-wrapper {
+        background-color: #335 !important;
+    }
+
+    .icons,
+    .aui-button,
+    div.text span[placeholder=true] {
+        color: #ccc !important;
+    }
+
+    button[appearance=subtle] {
+        color: #bbb !important;
+    }
+
+    .icons {
+        color: #ccc;
+    }
+
+    .target-field-button {
+        color: var(--ds-link) !important;
+    }
+
+    .target {
+        color: #ccc !important;
+    }
+
+    .target.selected {
+        color: #eef !important;
+    }
+
+    .akEditor {
+        background-color: #446;
+    }
+
+    .ak-editor-panel {
+        background-color: #557 !important;
+        color: #eef !important;
+    }
+
+    .ak-editor-panel__icon {
+        color: #bbf !important;
+    }
+
+    [data-testid="ak-editor-main-toolbar"] {
+        background-color: #448;
+    }
+
+    div[data-role=droplistContent] div.ifDpVz {
+        background-color: #448 !important;
+    }
+}
