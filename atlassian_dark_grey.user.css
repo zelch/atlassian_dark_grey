@@ -585,6 +585,80 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         color: var(--ds-text);
     }
 
+    .css-1pialsq {
+        color: var(--ds-text);
+    }
+
+    .css-odgche {
+        color: var(--ds-text);
+    }
+
+    .css-1xuxhg0-control:hover {
+        cursor: pointer;
+        background-color: var(--ds-background-input-hovered);
+        border-color: #666;
+    }
+
+    .css-1xuxhg0-control {
+        background-color: var(--ds-background-input);
+        border-color: #555;
+    }
+
+    .css-fhdv5o-control:hover {
+        cursor: pointer;
+        background-color: var(--ds-background-input-hovered);
+        border-color: #666;
+    }
+
+    .css-fhdv5o-control {
+        background-color: var(--ds-background-input);
+        border-color: #555;
+    }
+
+    .css-1e5fazo-menu {
+        background-color: var(--ds-background-input);
+    }
+
+    .css-18u3ks8 {
+        color: var(--ds-text-subtlest) !important;
+    }
+
+    .css-1qghbuv,
+    .css-1qghbuv:hover,
+    .css-1qghbuv:active,
+    .css-1qghbuv:focus,
+    .css-1qghbuv:visited,
+    .css-1qghbuv:disabled,
+    .css-1qghbuv[disabled] {
+        color: var(--ds-text-subtlest) !important;
+    }
+
+    .css-119ypt5,
+    .css-119ypt5:hover,
+    .css-119ypt5:active,
+    .css-119ypt5:focus,
+    .css-119ypt5:visited,
+    .css-119ypt5:disabled,
+    .css-119ypt5[disabled],
+    .css-1tpfcob,
+    .css-1tpfcob:hover,
+    .css-1tpfcob:active,
+    .css-1tpfcob:focus,
+    .css-1tpfcob:visited,
+    .css-1tpfcob:disabled,
+    .css-1tpfcob[disabled] {
+        color: #777;
+    }
+
+    .css-ypnnxr svg {
+        color: #bbf;
+    }
+
+    .css-ypi1dq-placeholder,
+    .css-14byyxd-indicatorContainer {
+        color: var(--ds-text);
+    }
+
     .css-1s0fs6f button {
         color: #aaa !important;
     }
