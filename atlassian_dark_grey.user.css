@@ -185,6 +185,11 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         color: var(--ds-text);
     }
 
+    .bqcNOQ:hover {
+        background-color: var(--ds-background-neutral-hovered);
+        cursor: pointer;
+    }
+
     .css-yurw3r {
         color: var(--ds-text);
     }
