@@ -34,6 +34,7 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         --text-highEmphasis: #eef;
         --ds-text-mediumEmphasis: #ddf;
         --ds-surface-overlay: #446;
+        --ds-background-accent-gray-subtler: #224;
         --ds-background-neutral-subtle: #446;
         --ds-background-neutral-subtle-hovered: #44a;
         --ds-background-neutral: #335;
