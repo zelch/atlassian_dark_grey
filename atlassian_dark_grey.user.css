@@ -1694,7 +1694,7 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
     }
 
     nav div[data-section="true"] {
-        background-color: #333;
+        background-color: #335;
         padding: 0px 6px 6px 6px;
         margin-bottom: 6px;
         border-radius: 6px;
