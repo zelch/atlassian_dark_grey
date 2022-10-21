@@ -186,6 +186,49 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         color: var(--ds-text);
     }
 
+    #repo-create {
+        background: #000;
+        border-radius: 15px;
+    }
+
+    .repo-create--expand-trigger {
+        color: var(--ds-link) !important;
+    }
+
+    body.adg3 form.aui .buttons-container .cancel:focus,
+    body.adg3 form.aui .buttons-container .cancel:hover,
+    body.adg3 form.aui .buttons-container .cancel {
+        color: var(--ds-link) !important;
+    }
+
+    body.adg3 form.aui .multi-select,
+    body.adg3 form.aui .password,
+    body.adg3 form.aui .select,
+    body.adg3 form.aui .text,
+    body.adg3 form.aui .textarea,
+    body.adg3 form.aui .upfile {
+        background-color: var(--ds-background-input);
+        color: var(--ds-text);
+    }
+
+    form.aui:not(.aui-legacy-forms) .password:hover,
+    form.aui:not(.aui-legacy-forms) .select:hover,
+    form.aui:not(.aui-legacy-forms) .text:hover,
+    form.aui:not(.aui-legacy-forms) .textarea:hover {
+        background-color: var(--ds-background-input-hovered);
+        color: var(--ds-text);
+    }
+
+    body.adg3 form.aui .multi-select:focus,
+    body.adg3 form.aui .password:focus,
+    body.adg3 form.aui .select:focus,
+    body.adg3 form.aui .text:focus,
+    body.adg3 form.aui .textarea:focus,
+    body.adg3 form.aui .upfile:focus {
+        background-color: var(--ds-background-input-selected);
+        color: var(--ds-text);
+    }
+
     .bqcNOQ:hover {
         background-color: var(--ds-background-neutral-hovered);
         cursor: pointer;
@@ -1712,7 +1755,6 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         box-shadow: -3px 3px 1px #00000850;
     }
     */
-
     [data-placement="bottom-start"] a,
     [data-placement="bottom-start"] a:visited {
         color: var(--ds-link);
