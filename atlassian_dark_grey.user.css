@@ -7,14 +7,10 @@
  * @preprocessor less
  *
  * ==/UserStyle== */
-@-moz-document regexp(".*.atlassian.net/jira.*"),
-regexp(".*.atlassian.net/issues.*"),
-regexp(".*.atlassian.net/browse.*"),
-regexp(".*.atlassian.net/secure.*"),
+@-moz-document regexp(".*.atlassian.net/secure.*"),
 regexp(".*.bitbucket.org/.*"),
 regexp("https://awesome-graphs.stiltsoft.net/.*"),
 regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
-
     :root {
         --ds-background-selected: #117;
         --ds-surface: #335;
@@ -2405,6 +2401,8 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
 }
 
 
+
+/*
 @-moz-document regexp(".*.atlassian.net/issues.*") {
     html,
     body,
@@ -2414,11 +2412,6 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         color: #ccc !important;
     }
 
-    /*
-    nav ::after {
-        background: transparent !important;
-    }
-    */
     a > * {
         color: #8ec4fd !important;
     }
@@ -2451,6 +2444,7 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         background-color: #222 !important;
     }
 }
+*/
 
 @-moz-document regexp("https://canned-responses-pro.com/insert.*") {
     :root {
