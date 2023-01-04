@@ -69,7 +69,7 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         --ds-icon-information: #38f;
         --ds-iconBorder-danger: #f00;
         --ds-iconBorder-brand: #88f;
-
+        --ds-border-focused: #f00; // I'm not entirely sure what this is for.
         --ds-text-accent-purple: #ee00ee;
         --ds-text-accent-green: #0d0;
         --ds-text-accent-blue: #55f;
@@ -172,6 +172,28 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
 
     /* End of bitbucket deployments. */
     /* bitbucket specific */
+    .css-1wk91ow {
+        color: var(--ds-text);
+    }
+
+    .css-1wk91ow thead tr th {
+        color: var(--ds-text);
+    }
+
+    .css-1j100et-control {
+        background-color: var(--ds-background-input);
+        border-color: var(--ds-background-input-pressed);
+    }
+
+    .css-1j100et-control:hover {
+        background-color: var(--ds-background-input-hovered);
+        border-color: var(--ds-background-input-pressed);
+    }
+
+    .css-1h4uqur {
+        color: var(--ds-text-inverse);
+    }
+
     body {
         color: var(--ds-text);
     }
@@ -451,6 +473,18 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         color: var(--ds-text);
     }
 
+    .css-7c54ge-singleValue {
+        color: var(--ds-text);
+    }
+
+    .css-1xc40jv {
+        background-color: var(--ds-background-information);
+    }
+
+    .repository-links--require-issue-key {
+        background-color: var(--ds-background-neutral);
+    }
+
 
 
 
@@ -514,16 +548,16 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
     }
 
     div[data-testid="branch-restriction-modal-dialog-content--body"] label {
-        /*color: var(--ds-text);*/
-        filter: invert(1) hue-rotate(180deg);
+        color: var(--ds-text);
+        /*filter: invert(1) hue-rotate(180deg);*/
     }
 
     /* Links inside the invert area should still be readable, darn it. */
+    /*
     div[data-testid="branch-restriction-modal-dialog-content--body"] label a {
         filter: hue-rotate(180deg) saturate(200%) brightness(100%) invert(100%);
     }
-
-
+    */
     div[data-testid="branch-restriction-modal-dialog-content--body"] div[class$="control"] {
         background-color: var(--ds-background-neutral);
         border-color: var(--ds-background-neutral-subtle)
@@ -879,6 +913,7 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
 
     .css-1yk35ib,
     .css-1yk35ib:hover,
+    .css-1yk35ib:focus,
     .css-1k35ib:focus,
     .css-13ub8oq a,
     .css-13ub8oq:hover a,
@@ -1049,26 +1084,19 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         background-color: #131e30;
     }
 
+
     .skipped-top::before,
     .skipped-middle::before {
         background: rgba(0, 0, 0, 0);
-        border-top: 0px solid;
-        border-bottom: 0px solid;
-        outline: 1px solid #dfe1e6;
-        outline-offset: -2px
-    }
-
-    .skipped-top::before {
-        background: rgba(0, 0, 0, 0);
-        border-top: 0px solid;
-        border-bottom: 0px solid;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
         outline: 0px solid #dfe1e6;
         outline-offset: -2px
     }
 
-
     .refract-container .skipped-container::after {
-        background-color: rgb(0, 0, 0, 0);
+        // background-color: rgb(0, 0, 255, 255);
+        background-color: var(--ds-background-default)
     }
 
     [data-testid="comment-filter--avatar-group"] div[role="presentation"] :hover,
@@ -2482,6 +2510,11 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
 
     body {
         color: var(--ds-text);
+        background-color: #333;
+    }
+
+    form.aui {
+        background-color: #333;
     }
 
     /*
