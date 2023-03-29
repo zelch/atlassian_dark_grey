@@ -1006,6 +1006,33 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         color: var(--ds-text);
     }
 
+
+    div[data-qa="bk-file__header"],
+    div[data-qa="bk-file__content"] {
+        border: 1px solid #888
+    }
+
+    .bitkit-diff-wrapper-diff .chunk-wrapper:not(:last-child) {
+        border-bottom: 1px solid #888;
+    }
+
+    .bitkit-diff-wrapper-diff .show-more-lines-button {
+        border-bottom: 1px solid #888;
+        border-right: 1px solid #888;
+    }
+
+    .bitkit-diff-wrapper-diff .lines-wrapper:last-child .line-numbers {
+        border-bottom: 1px solid #888;
+    }
+
+    .bitkit-diff-wrapper-diff .chunk-heading-wrapper:not(:last-child) {
+        border-bottom: 1px solid #888;
+    }
+
+    .bitkit-diff-wrapper-diff .line-numbers {
+        border-right: 1px solid #888;
+    }
+
     .bitkit-diff-wrapper-diff {
         color: #ccc;
     }
@@ -1082,6 +1109,52 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
     .refract-container .gutter:hover .line-numbers::before,
     .refract-container .gutter:hover .line-numbers::after {
         background-color: #131e30;
+    }
+
+    .bitkit-diff-wrapper-diff .token.operator {
+        background-color: rgba(46, 47, 48, 0.5);
+        color: rgb(194, 159, 118) !important;
+    }
+
+    .bitkit-diff-wrapper-diff .token.keyword,
+    .token.atrule,
+    .token.attr-value {
+        color: rgb(97, 197, 240)
+    }
+
+    .bitkit-diff-wrapper-diff .token.selector,
+    .bitkit-diff-wrapper-diff .token.attr-name,
+    .bitkit-diff-wrapper-diff .token.string,
+    .token.char,
+    .bitkit-diff-wrapper-diff .token.builtin,
+    .bitkit-diff-wrapper-diff .token.inserted {
+        color: rgb(195, 240, 107)
+    }
+
+    .bitkit-diff-wrapper-diff .token.property,
+    .bitkit-diff-wrapper-diff .token.tag,
+    .bitkit-diff-wrapper-diff .token.boolean,
+    .bitkit-diff-wrapper-diff .token.number,
+    .bitkit-diff-wrapper-diff .token.constant,
+    .bitkit-diff-wrapper-diff .token.symbol,
+    .bitkit-diff-wrapper-diff .token.deleted {
+        color: rgb(240, 107, 181)
+    }
+
+    .token.comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata {
+        // color: #dcdbd8;
+        color: rgb(153, 146, 134);
+    }
+
+    .chunks-wrapper {
+        scrollbar-color: #888 var(--ds-surface) !important;
+    }
+
+    div[data-testid="filter-and-sort-settings-grid"] > div > div > div > div > span {
+        color: var(--ds-text);
     }
 
 
@@ -2473,7 +2546,6 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
     }
 }
 */
-
 @-moz-document regexp("https://canned-responses-pro.com/insert.*") {
     :root {
         --ds-background-selected: #444;
