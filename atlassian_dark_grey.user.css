@@ -49,7 +49,7 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         --ds-background-danger-bold: #822;
         --ds-background-subtleDanger-resting: #411;
         --ds-background-discovery-hovered: #0b1628;
-        --ds-background-discovery: #228;
+        --ds-background-discovery: #44f;
         --ds-background-brand: #114;
         --ds-background-inverse-subtle: #313;
         --ds-background-selected-hovered: #229;
@@ -74,11 +74,21 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         --ds-text-accent-green: #0d0;
         --ds-text-accent-blue: #55f;
         --ds-text-accent-teal: #0ee;
+        --ds-text-discovery: #eee;
     }
 
     .screen-editor .aui-restfultable-create tr.aui-restfultable-focused:hover td,
     .screen-editor .aui-restfultable-create tr.aui-restfultable-focused td {
         background-color: var(--ds-background-neutral-subtle);
+    }
+
+    a.css-1o37x4g,
+    a.css-1erlht4 {
+        color: var(--ds-text) !important;
+    }
+
+    div.rah-static article .codehilite .nt {
+        color: #bbf;
     }
 
     a[id="com.xpandit.plugins.xray__xray-document-generator-bulk"] {
@@ -1001,6 +1011,14 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         color: #ccc !important;
     }
 
+    #bitbucket-navigation {
+        --ds-text-inverse: #333;
+    }
+
+    div[data-qa="pr-activity"] > div > div {
+        background-color: var(--ds-background-neutral)
+    }
+
     /* Bitbucket, oh so helpfully, seems to have multiple completely unrelated widgets for doing code diffs, that look the same. */
     #repo-content #commit > section > h1 {
         color: var(--ds-text);
@@ -1659,8 +1677,23 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         background-color: #0b1628;
     }
 
+    #bitbucket-navigation > div[role="presentation"] > a > div > div > span {
+        box-shadow: #777 0px 0px 0px 2px;
+    }
+
     .css-t3yiul.css-t3yiul {
         background-color: #000618;
+    }
+
+    .css-1hpn4bw::before,
+    .css-1hpn4bw::after {
+        background-color: #888;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    div.css-mvkep6 {
+        color: rgb(94, 169, 240);
     }
 
 
@@ -1711,10 +1744,11 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         filter: invert(1);
     }
     */
+    /*
     [data-test-id="issue.views.field.select.common.select-inline-edit.components"] [role="presentation"] a {
         filter: invert(1);
     }
-
+    */
     [role="presentation"] p {
         color: #ccc;
     }
