@@ -1219,7 +1219,6 @@ regexp(".*.atlassian.net/wiki/.*") {
     .token.prolog,
     .token.doctype,
     .token.cdata {
-        // color: #dcdbd8;
         color: rgb(153, 146, 134);
     }
 
@@ -1242,7 +1241,6 @@ regexp(".*.atlassian.net/wiki/.*") {
     }
 
     .refract-container .skipped-container::after {
-        // background-color: rgb(0, 0, 255, 255);
         background-color: var(--ds-background-default)
     }
 
@@ -2518,7 +2516,9 @@ regexp(".*.atlassian.net/wiki/.*") {
 
     .css-18mjdzo:hover {
         color: black;
-    } // Confluence:
+    }
+
+    /* Confluence */
     div.confluence-dashboard nav div[data-testid="app-navigation-home-logo"] svg g path {
         fill: var(--ds-text);
     }
