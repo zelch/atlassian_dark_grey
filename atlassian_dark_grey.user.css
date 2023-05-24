@@ -78,7 +78,61 @@ regexp(".*.atlassian.net/wiki/.*") {
         --ds-text-discovery: #eee;
     }
 
-    .screen-editor .aui-restfultable-create tr.aui-restfultable-focused:hover td,
+    /* Bitbucket code search */
+    .css-56ezaj {
+        background: var(--ds-background-selected);
+        border-color: var(--ds-border-neutral);
+    }
+
+    .css-1cnqc00 {
+        background: var(--ds-background-input-pressed);
+        border-color: var(--ds-border-focused);
+        color: var(--ds-text);
+    }
+
+    .css-1h85xp {
+        background: var(--ds-background-input-hovered);
+        border-color: var(--ds-border-input);
+        color: var(--ds-text);
+    }
+
+    .css-5o2yi {
+        background: var(--ds-background-input);
+        border-color: var(--ds-background-input);
+        color: var(--ds-text);
+    }
+
+    .css-1mfj4dj,
+    .css-fkzdlk,
+    .css-jha7l5 {
+        border-radius: 10px;
+        border-color: var(--ds-border);
+    }
+
+    /* Bitbucket pipelines, kinda. */
+    .css-1kdr5b7 {
+        color: var(--ds-text-subtlest);
+    }
+
+    /* Bitbucket environments */
+    .App div[data-testid="environment-list"] div[data-rbd-droppable-id="droppable"] > div > :nth-child(2) {
+        background-color: var(--ds-background-neutral-subtle);
+    }
+
+    .App div[data-testid="environment-list"] header[data-testid="environment-header"] > :nth-child(1) {
+        color: var(--ds-text);
+    }
+
+    .App div[data-testid="environment-list"] strong,
+    .css-ilhl5d {
+        color: var(--ds-text);
+    }
+
+    span[aria-label="Premium"] {
+        --icon-primary-color: #88F !important;
+    }
+
+    .App .aliaskit-portal > div .screen-editor .aui-restfultable-create tr.aui-restfultable-focused:hover td,
     .screen-editor .aui-restfultable-create tr.aui-restfultable-focused td {
         background-color: var(--ds-background-neutral-subtle);
     }
@@ -125,6 +179,7 @@ regexp(".*.atlassian.net/wiki/.*") {
 
     .css-9o1qfs em {
         background-color: var(--ds-background-warning);
+        color: #faa;
     }
 
     .css-cj6wzu {
@@ -1130,33 +1185,33 @@ regexp(".*.atlassian.net/wiki/.*") {
         background-color: #131e30;
     }
 
-    .bitkit-diff-wrapper-diff .token.operator {
+    .token.operator {
         background-color: rgba(46, 47, 48, 0.5);
         color: rgb(194, 159, 118) !important;
     }
 
-    .bitkit-diff-wrapper-diff .token.keyword,
+    .token.keyword,
     .token.atrule,
     .token.attr-value {
         color: rgb(97, 197, 240)
     }
 
-    .bitkit-diff-wrapper-diff .token.selector,
-    .bitkit-diff-wrapper-diff .token.attr-name,
-    .bitkit-diff-wrapper-diff .token.string,
+    .token.selector,
+    .token.attr-name,
+    .token.string,
     .token.char,
-    .bitkit-diff-wrapper-diff .token.builtin,
-    .bitkit-diff-wrapper-diff .token.inserted {
+    .token.builtin,
+    .token.inserted {
         color: rgb(195, 240, 107)
     }
 
-    .bitkit-diff-wrapper-diff .token.property,
-    .bitkit-diff-wrapper-diff .token.tag,
-    .bitkit-diff-wrapper-diff .token.boolean,
-    .bitkit-diff-wrapper-diff .token.number,
-    .bitkit-diff-wrapper-diff .token.constant,
-    .bitkit-diff-wrapper-diff .token.symbol,
-    .bitkit-diff-wrapper-diff .token.deleted {
+    .token.property,
+    .token.tag,
+    .token.boolean,
+    .token.number,
+    .token.constant,
+    .token.symbol,
+    .token.deleted {
         color: rgb(240, 107, 181)
     }
 
