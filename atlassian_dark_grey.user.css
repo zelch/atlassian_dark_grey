@@ -30,10 +30,10 @@ regexp(".*.atlassian.net/wiki/.*") {
         --ds-text-highEmphasis: #eef;
         --text-highEmphasis: #eef;
         --ds-text-mediumEmphasis: #ddf;
-        --ds-surface-overlay: #224;
+        --ds-surface-overlay: #335;
         --ds-surface-raised: #224;
         --ds-background-accent-gray-subtler: #224;
-        --ds-background-neutral-subtle: #446;
+        --ds-background-neutral-subtle: #335;
         --ds-background-neutral-subtle-hovered: #44a;
         --ds-background-neutral: #335;
         --ds-background-neutral-hovered: #33a;
@@ -46,7 +46,7 @@ regexp(".*.atlassian.net/wiki/.*") {
         --ds-background-success: #141;
         --ds-background-information: #114;
         --ds-background-warning: #440;
-        --ds-background-danger: #411;
+        --ds-background-danger: #611;
         --ds-background-danger-bold: #822;
         --ds-background-subtleDanger-resting: #411;
         --ds-background-discovery-hovered: #0b1628;
@@ -60,7 +60,7 @@ regexp(".*.atlassian.net/wiki/.*") {
         --ds-background-subtleNeutral-hover: #558;
         --ds-border-neutral: #11a;
         --ds-border-input: #44a;
-        --ds-border: #11f;
+        --ds-border: #888;
         --ds-UNSAFE_util-transparent: transparent;
         --ds-link: #8ec4fd;
         --ds-link-active: #ae74ff;
@@ -70,7 +70,7 @@ regexp(".*.atlassian.net/wiki/.*") {
         --ds-icon-information: #38f;
         --ds-iconBorder-danger: #f00;
         --ds-iconBorder-brand: #88f;
-        --ds-border-focused: #f00; // I'm not entirely sure what this is for.
+        --ds-border-focused: #55f;
         --ds-text-accent-purple: #ee00ee;
         --ds-text-accent-green: #0d0;
         --ds-text-accent-blue: #55f;
@@ -1850,6 +1850,7 @@ regexp(".*.atlassian.net/wiki/.*") {
         color: #ccc;
     }
 
+    /*
     nav > div::after {
         background: #333 !important;
     }
@@ -1879,7 +1880,7 @@ regexp(".*.atlassian.net/wiki/.*") {
     nav button + a {
         margin-top: 10px;
     }
-
+    */
     /*
     [data-placement="bottom-start"] {
         background-color: #444;
