@@ -32,6 +32,8 @@ regexp(".*.atlassian.net/wiki/.*") {
         --ds-text-mediumEmphasis: #ddf;
         --ds-surface-overlay: #335;
         --ds-surface-raised: #224;
+        --ds-shadow-raised: #335;
+        --ds-surface-sunken: #224;
         --ds-background-accent-gray-subtler: #224;
         --ds-background-neutral-subtle: #335;
         --ds-background-neutral-subtle-hovered: #44a;
@@ -102,6 +104,10 @@ regexp(".*.atlassian.net/wiki/.*") {
         color: var(--ds-text);
     }
 
+    .css-1izj1pk {
+        background: #232e40;
+    }
+
     .css-1mfj4dj,
     .css-fkzdlk,
     .css-jha7l5 {
@@ -110,6 +116,10 @@ regexp(".*.atlassian.net/wiki/.*") {
     }
 
     /* Bitbucket pipelines, kinda. */
+
+    .css-hq7c28 > a > div, .css-hq7c28 > div {
+        background: #338;
+    }
     .css-1kdr5b7 {
         color: var(--ds-text-subtlest);
     }
