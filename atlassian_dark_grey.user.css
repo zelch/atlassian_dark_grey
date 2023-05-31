@@ -2237,9 +2237,9 @@ regexp(".*.atlassian.net/wiki/.*") {
         color: #8ec4fd !important;
     }
 
-    /* 
-       Many classes with font color scattered 
-       throught the search options :/ 
+    /*
+       Many classes with font color scattered
+       throught the search options :/
     */
     .css-lvvrvua,
     .css-1ol1n65,
@@ -2501,7 +2501,7 @@ regexp(".*.atlassian.net/wiki/.*") {
     }
 
     /* new issue */
-    /* Project dropdown 
+    /* Project dropdown
     Issue type dropdown
 */
     .css-1fz5jqa-control,
