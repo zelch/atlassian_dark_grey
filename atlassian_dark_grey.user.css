@@ -69,7 +69,8 @@
 @-moz-document regexp(".*.atlassian.net/secure.*"),
 regexp(".*.bitbucket.org/.*"),
 regexp("https://awesome-graphs.stiltsoft.net/.*"),
-regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
+regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*"),
+regexp("https://id.atlassian.com/.*") {
     :root {
         --ds-background-selected: #117;
         --ds-surface: #335;
