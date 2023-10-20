@@ -94,7 +94,8 @@ regexp("https://id.atlassian.com/.*") {
         --ds-surface-raised: #224;
         --ds-surface-raised-hovered: #446;
         --ds-surface-sunken: #113;
-        --ds-shadow-raised: #335;
+        --ds-shadow-raised: 0 0px 1px 1px #668;
+        --ds-shadow-overlay: 0 8px 16px -4px #99f;
         --ds-background-accent-gray-subtler: #224;
         --ds-background-neutral-subtle: #335;
         --ds-background-neutral-subtle-hovered: #44a;
