@@ -7,6 +7,65 @@
  * @preprocessor less
  *
  * ==/UserStyle== */
+@-moz-document regexp(".*bitbucket\.org/blog/.*") {
+    .site-title a {
+        filter: brightness(300%);
+    }
+
+    .post__header .entry-title {
+        color: var(--ds-text-highEmphasis);
+    }
+
+    .post__date {
+        color: var(--ds-text-subtlest);
+    }
+
+    .author-card__name {
+        color: var(--ds-text-lowEmphasis);
+    }
+
+    .post__content {
+        color: var(--ds-text);
+    }
+
+    .related-posts .card {
+        background-color: var(--ds-background-information);
+    }
+
+    .related-posts .post__title a {
+        color: var(--ds-text-mediumEmphasis);
+    }
+
+    .post__excerpt {
+        color: var(--ds-text);
+    }
+
+    .site-footer {
+        background-color: var(--ds-background);
+        color: var(--ds-text);
+    }
+
+    .footer-heading {
+        color: var(--ds-text-lowEmphasis);
+    }
+
+    .footer-menu .menu-item {
+        color: var(--ds-text);
+    }
+
+    .site-footer a {
+        color: var(--ds-link);
+    }
+
+    .social__item a {
+        filter: brightness(300%);
+    }
+
+    .footer-logo {
+        filter: brightness(150%);
+    }
+}
+
 @-moz-document regexp(".*.atlassian.net/secure.*"),
 regexp(".*.bitbucket.org/.*"),
 regexp("https://awesome-graphs.stiltsoft.net/.*"),
