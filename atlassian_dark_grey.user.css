@@ -140,6 +140,29 @@ regexp("https://id.atlassian.com/.*") {
         --ds-text-accent-blue: #55f;
         --ds-text-accent-teal: #0ee;
         --ds-text-discovery: #eee;
+        --ds-background-accent-gray-subtlest: #555;
+    }
+
+    /* Bitbucket email aliases */
+    table.widget tr.form {
+        background-color: var(--ds-background-information)
+    }
+
+    body.adg3 .aui-button,
+    body.adg3 .aui-button:visited,
+    body.adg3 a.aui-button {
+        background-color: var(--ds-background-selected);
+        color: var(--ds-text);
+    }
+
+    /* Bitbucket keyboard shortcuts */
+    body.adg3 section h3 {
+        color: var(--ds-text-lowEmphasis);
+    }
+
+    #keyboard-shortcuts .keyboard-shortcut-context kbd {
+        background: var(--ds-background-information);
+        color: var(--ds-text-highEmphasis);
     }
 
     /* Bitbucket PR dropdown thinggy. */
