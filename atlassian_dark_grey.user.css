@@ -77,6 +77,7 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         --ds-text-subtle: #bbb;
         --ds-text-lowEmphasis: #ddd;
         --ds-text: #ccc;
+        --ds-text-disabled: #888;
         --ds-text-selected: #eee;
         --ds-text-inverse: #fff;
         --ds-text-brand: #0ff;
@@ -90,8 +91,9 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         --ds-text-mediumEmphasis: #ddf;
         --ds-surface-overlay: #335;
         --ds-surface-raised: #224;
+        --ds-surface-raised-hovered: #446;
+        --ds-surface-sunken: #113;
         --ds-shadow-raised: #335;
-        --ds-surface-sunken: #224;
         --ds-background-accent-gray-subtler: #224;
         --ds-background-neutral-subtle: #335;
         --ds-background-neutral-subtle-hovered: #44a;
@@ -138,6 +140,190 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         --ds-text-discovery: #eee;
     }
 
+    /* Bitbucket PR dropdown thinggy. */
+    div[data-role="droplistContent"] div[role="menu"] span[role="menuitem"],
+    div[data-role="droplistContent"] div[role="menu"] a[role="menuitem"] {
+        color: var(--ds-link);
+        background-color: var(--ds-background-neutral) !important;
+    }
+
+    div[data-role="droplistContent"] div[role="menu"] span[role="menuitem"]:hover,
+    div[data-role="droplistContent"] div[role="menu"] a[role="menuitem"]:hover {
+        color: var(--ds-link);
+        background-color: var(--ds-background-neutral-hovered) !important;
+        text-decoration: underline;
+    }
+
+    .css-1qhszr8,
+    .css-1qhszr8:active,
+    .css-1qhszr8:focus,
+    .css-1qhszr8:visited,
+    .css-1qhszr8:disabled,
+    .css-1qhszr8[disabled] {
+        background: var(--ds-background-neutral);
+        text-decoration: none;
+    }
+
+    .css-3nrhgd:hover {
+        background: var(--ds-background-neutral-hovered);
+        text-decoration: unset;
+    }
+
+    /* Bitbucket project listings */
+    table > tbody > tr[data-testid="project-row"] > td:first-child > div > div > a {
+        color: var(--ds-link);
+    }
+
+    table > tbody > tr[data-testid="project-row"]:hover {
+        background-color: var(--ds-background-neutral-hovered)
+    }
+
+    table.css-1yq88hf > thead > tr > th {
+        color: var(--ds-text)
+    }
+
+    /* Bitbucket workplace settings */
+    .css-1y5ns9x-multiValue {
+        background-color: var(--ds-background-selected)
+    }
+
+    /* Bitbucket repository settings */
+    code,
+    tt {
+        background: var(--ds-background-neutral);
+    }
+
+    .filter-modal-content .modal-inner {
+        background-color: var(--ds-background-information);
+    }
+
+    .filter-modal-content .modal-inner code {
+        background-color: #112;
+        color: var(--ds-text);
+    }
+
+    .filter-modal-content .modal-inner code.language-yaml,
+    .filter-modal-content .modal-inner .unescaped,
+    .component--filter-sort-search .right-items .all-items .pi .inner .unescaped {
+        color: var(--ds-text);
+    }
+
+    .component--filter-sort-search .right-items .all-items .pi.modal-pop {
+        background-color: var(--ds-background-neutral)
+    }
+
+    .component--filter-sort-search .right-items .all-items .pi.modal-pop h4 {
+        color: var(--ds-link) !important;
+    }
+
+    .component--filter-sort-search .right-items .all-items .pi.modal-pop p {
+        color: var(--ds-text) !important;
+    }
+
+
+    /* Bitbucket issues */
+    #issue-view #issue-main-content .issue-author .inline-user--name,
+    #issue-view #issue-main-content .issue-author .inline-user--name a {
+        color: var(--ds-text-highEmphasis);
+    }
+
+    #issue-view #issue-main-content .issue-author time {
+        color: var(--ds-text-subtle);
+    }
+
+    .css-194d9bm {
+        background-color: var(--ds-background-selected)
+    }
+
+    body.adg3 .wiki-content h3,
+    body.adg3 ak-editor-bitbucket .ProseMirror h3,
+    body.adg3 h3,
+    body.adg3 section h1,
+    body.adg3 section h2,
+    body.adg3 section section h1 {
+        color: var(--ds-text);
+    }
+
+    .css-1b03djw:hover {
+        color: var(--ds-link-active);
+    }
+
+    .css-1b03djw:visited {
+        color: var(--ds-link-active);
+    }
+
+    /* Bitbucket settings */
+    .css-1guhrvd > div > div:first-of-type:hover,
+    .css-1guhrvd > div > div:first-of-type:focus {
+        background-color: var(--ds-background-discovery-hovered)
+    }
+
+    .css-17ftnce,
+    .kZdnIP {
+        background-color: var(--ds-background-input);
+        color: var(--ds-text);
+        border-color: var(--ds-border-input);
+    }
+
+    .css-q9onic,
+    .jKSpdi {
+        background-color: var(--ds-background-input-pressed);
+        color: var(--ds-text);
+        border-color: var(--ds-border-input);
+    }
+
+    .css-sbnyjh,
+    .kZdnIP:hover {
+        background-color: var(--ds-background-input-hovered);
+        color: var(--ds-text);
+        border-color: var(--ds-border-input);
+    }
+
+    /* Bitbucket pipelines */
+    .css-dpc233 > h3,
+    .css-dpc233 > p,
+    .css-pf8d8y > p {
+        color: var(--ds-text);
+    }
+
+    /* Bitbucket branches */
+    .css-1waz8j8,
+    .css-1waz8j8:hover {
+        color: var(--ds-link);
+    }
+
+    .css-95a91x,
+    .css-199ngp7:hover,
+    .css-199ngp7:focus,
+    .css-95a91x:hover,
+    .css-95a91x:focus {
+        background: var(--ds-background-neutral);
+        box-shadow: var(--ds-background-neutral) -4px 0px 0px 0px, var(--ds-background-neutral) 4px 0px 0px 0px;
+    }
+
+    .css-1k40zoa,
+    .css-1k40zoa:hover,
+    .css-12ccrza,
+    .css-12ccrza:hover,
+    .css-12ccrza:focus {
+        color: var(--ds-text);
+    }
+
+    button.css-t20i8u {
+        color: var(--ds-text) !important;
+    }
+
+    /* Bitbucket pipelines */
+    .css-84oir3 > a > div,
+    .css-84oir3 > div {
+        background-color: var(--ds-background-selected);
+    }
+
+    .css-84oir3 > a:hover > div,
+    .css-hq7c28 > a:hover > div {
+        background-color: var(--ds-background-selected-hovered);
+    }
+
     /* Bitbucket code search */
     .css-56ezaj {
         background: var(--ds-background-selected);
@@ -174,12 +360,32 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
     }
 
     /* Bitbucket pipelines, kinda. */
-
-    .css-hq7c28 > a > div, .css-hq7c28 > div {
+    .css-hq7c28 > a > div,
+    .css-hq7c28 > div {
         background: #338;
     }
+
+    .css-1f0flf3 {
+        background: var(--ds-surface-raised);
+    }
+
     .css-1kdr5b7 {
         color: var(--ds-text-subtlest);
+    }
+
+    .css-1v2ghzb > a > div,
+    .css-1v2ghzb > div {
+        background: var(--ds-surface-raised);
+    }
+
+    .css-4szk70 > a > div,
+    .css-4szk70 > div {
+        background: #226;
+    }
+
+    .css-4szk70 > a:hover > div,
+    .css-1v2ghzb > a:hover > div {
+        background: #228;
     }
 
     /* Bitbucket environments */
@@ -306,6 +512,28 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
 
     /* End of bitbucket deployments. */
     /* bitbucket specific */
+    .bbtIPa,
+    .bbtIPa > textarea::placeholder,
+    .bbtIPa > textarea,
+    .css-w5is8s,
+    .fuRtTn {
+        background-color: var(--ds-background-input);
+        color: var(--ds-text);
+        border: var(--ds-border-input);
+    }
+
+    .bbtIPa:hover,
+    .bbtIPa > textarea {
+        background-color: var(--ds-background-input-hovered);
+        color: var(--ds-text);
+    }
+
+    .bIKaku,
+    .bIKaku > textarea {
+        background-color: var(--ds-background-input-pressed);
+        color: var(--ds-text);
+    }
+
     .css-1wk91ow {
         color: var(--ds-text);
     }
@@ -872,7 +1100,7 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
     }
 
     article[data-qa="readme-container"] code {
-        background-color: #111;
+        background-color: #114;
     }
 
     .css-1jmpi03 {
@@ -893,7 +1121,6 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         color: var(--ds-text-lowEmphasis)
     }
 
-    .css-1wgdpuu,
     .css-t44v0r,
     .css-1olrtn {
         color: var(--ds-text)
@@ -1143,7 +1370,71 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         background-color: var(--ds-background-neutral)
     }
 
+    /* Oh bigbucket, yes, let's have an inline code thing with it's very own css, different than the editor. */
+    .css-3wuobs,
+    div.CodeMirror-gutter {
+        background-color: #232e40;
+    }
+
+    .CodeMirror {
+        background-color: #0b1628;
+        color: var(--ds-text);
+    }
+
+    .CodeMirror .CodeMirror-line .cm-comment {
+        color: #f00 !important;
+    }
+
+    .CodeMirror .CodeMirror-line .cm-string {
+        color: #f55;
+    }
+
+    .CodeMirror .CodeMirror-line .cm-indent-guides {
+        filter: contrast(200) brightness(200);
+    }
+
+    .jcvnGt {
+        background-color: #232e40;
+    }
+
+    .jcvnGt div[role="tabpanel"] > div > section,
+    .jcvnGt div[role="tabpanel"] > div > section > button,
+    .dRRxJo,
+    .fSHPmx,
+    .dagfTE,
+    .hlJjVT {
+        background-color: #0b1628;
+    }
+
+    .hrWiFu:hover {
+        background-color: #2b3648;
+    }
+
+    .hzzAHU,
+    .znQiq {
+        color: var(--ds-text);
+    }
+
+    /* Bitbucket Jira issues */
+    .css-1uavh08:hover,
+    .css-1uavh08:focus {
+        background-color: var(--ds-background-neutral-subtle-hovered)
+    }
+
+    /* background-color: #0b1628; */
     /* Bitbucket, oh so helpfully, seems to have multiple completely unrelated widgets for doing code diffs, that look the same. */
+    .hGoBsF:hover {
+        background-color: var(--ds-background-neutral-hovered);
+    }
+
+    .css-1b8cfn6 {
+        background-color: var(--ds-background-neutral);
+    }
+
+    .css-kqkfgx > div:first-of-type {
+        color: var(--ds-text-subtlest);
+    }
+
     #repo-content #commit > section > h1 {
         color: var(--ds-text);
     }
@@ -1214,8 +1505,19 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
     }
 
     .bitkit-diff-wrapper-diff .line-wrapper.type-add,
-    .refract-container .addition pre.source {
+    .refract-container .addition pre.source,
+    .bitkit-diff-wrapper-diff .inline-content.type-add {
         background-color: #0b3016;
+    }
+
+    .bitkit-diff-inline-content-container {
+        border-color: var(--ds-border);
+        border-radius: 10px;
+        border-width: 2px;
+    }
+
+    .css-1ec5one {
+        border: none;
     }
 
     .bitkit-diff-wrapper-diff .line-wrapper.type-del,
@@ -1807,6 +2109,10 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
         background-color: #000618;
     }
 
+    .css-queiy2.css-queiy2 {
+        background-color: #01b;
+    }
+
     .css-1hpn4bw::before,
     .css-1hpn4bw::after {
         background-color: #888;
@@ -2360,12 +2666,12 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
     }
 */
     /* pop up from dropdowns */
-    div.css-0 .eJTYOk.eJTYOk {
+    .eJTYOk.eJTYOk {
         background-color: #334 !important;
         border-color: #334 !important;
     }
 
-    .eJTYOk.eJTYOk :hover {
+    .eJTYOk.eJTYOk:hover {
         background-color: #445 !important;
     }
 
@@ -2865,3 +3171,10 @@ regexp("https://bitbucket-pipelines.prod.public.atl-paas.net/.*") {
 }
 
 
+@-moz-document regexp(".*bitbucket.org\/product\/.*") {
+    .h2,
+    div.inner > div > h4,
+    .text-n900 {
+        color: var(--ds-text) !important;
+    }
+}
